@@ -1,0 +1,45 @@
+---
+title: Getting Started
+description: If you're one of the important members on the team of Contributors, Maintainers or Owners and you're looking for a guide on how we do things around here, please read on.
+---
+
+import { CardGrid, LinkCard } from "@astrojs/starlight/components";
+import CoC from "../../../components/CoC.astro";
+
+<CoC />
+
+If you're one of the important members on the team of Contributors, Maintainers or Owners and you're looking for a guide on how we do things around here, please read on.
+
+## Ways to Contribute
+
+<CardGrid>
+	<LinkCard
+		description="Clean up issues and PRs, or answer questions"
+		href="./maintaining/provide-support"
+		title="Provide support"
+	/>
+
+	<LinkCard
+		description="Triage issues by adding the proper labels"
+		href="./maintaining/label-issues"
+		title="Label issues"
+	/>
+
+	<LinkCard
+		description="Check out the tasks we run to support the code"
+		href="./maintaining/working-with-the-code"
+		title="Working with the code"
+	/>
+
+	<LinkCard
+		description="Manage pull requests by reviewing them, testing thme and merging"
+		href="./maintaining/pull-requests"
+		title="Pull requests"
+	/>
+
+	<LinkCard
+		description="Set up versions and publish software"
+		href="./maintaining/releases"
+		title="Releases"
+	/>
+</CardGrid>

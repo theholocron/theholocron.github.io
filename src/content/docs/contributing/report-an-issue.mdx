@@ -1,0 +1,101 @@
+---
+title: Create an Issue
+description: Contribute by reporting bugs with clear, detailed steps to reproduce issues. Ensure you've followed guidelines before submitting to help improve the library.
+---
+
+import { Aside, Steps } from "@astrojs/starlight/components";
+import CoC from "../../../components/CoC.astro";
+
+<CoC />
+
+The easiest way to contribute is to help improve the library by finding bugs or request features within the system.
+
+Bugs are small, testable and demonstrate problems caused by the code. A good report will be able to easily outline the problem and provide steps to recreate. If you're going to submit a bug, please verify you've done everything to ensure its actually a bug and not something specific to your setup.
+
+Features…
+
+**TL;DR**
+
+<Steps>
+1. Open a bug report
+2. Fill out the template
+3. Provide as much context as you can
+</Steps>
+
+## Filling out the ticket
+
+Bug reports should be thorough and not leave anyone wondering or questioning what you were thinking. No one should have to ask you anything or require further clarification. When creating a ticket, use the **Bug Report template** within the repository to populate a lot of the information required. Below is a brief description of the parts of a bug report:
+
+* **title** (required): should be concise and descriptive. Anyone should be able to know what you're issue is at a glance and doesn't need the complete issue in it; try to keep it under 80 characters.
+* **description**: create a short summary of what is happening or what you're seeing.
+* **to reproduce** (required): the steps you followed to find this bug. This will make life so much easier to help fix the issue. Don't make any assumptions that someone will be on the same page or do the same thing as you. Nice and direct steps of what happened, what you clicked on can ease the time for us to debug.
+* **expected behavior** (required): let us know what you were expecting to happen. This may or may not align with the project, so be very detailed with this part; the more detail the better.
+* **screenshots**: a picture is worth a thousand words.
+* **device details** (required): for most of the information you can look at [https://www.whatsmybrowser.org](https://www.whatsmybrowser.org); for others check out below for how to find them.
+    * **OS & version**: Always include the OS(es) and version(s) where you found the issue. If, for example its Mavericks, you can put OSX 10.9.1.
+    * **Browser(s) Version(s)**: Which browsers have you tested this in? What version are you running?
+    * **Node Version(s)**: Not always required, but if there is something erring in the console, this is quite helpful.
+    * **NPM Version(s)**: Not always required, but if there is something erring in the console, this is quite helpful.
+    * **Browser Resolution**: Include resolutions as more of a range rather than an absolute. For example, `< 768px or >= 768px && <= 1024px`
+    * **Library Version**: Required; please include which version of this library you're using
+
+Don't be afraid to go into detail; no one ever said too much detail was a problem, and if they did, it wasn't us.
+
+### Example Ticket
+
+Follow the example below and you'll be on the right path. Let's assume that a you're trying build a new page on your application and the icons aren't showing up:
+
+```markdown
+Title: Icons are not showing up
+
+**Describe the bug**
+
+Developing my application and when it loads up
+the browser, I don't see any of the SVG icons loading up.
+
+**To Reproduce**
+
+1. Open http://example.com/new-app
+2. There is a blue button in the right side of the toolbar that says "Edit" 3. Notice there should be a pencil icon, and there is nothing.
+
+**Expected Behavior**
+
+When loading any page that contains an icon, I expect the icon to load alongside
+the other assets on the page, ie text, components, modules, etc
+
+**OS**: OSX 10.8.3
+**Browser(s) Version(s)**: All browsers, but founded initially in Chrome 38.0.2125.111
+**Node Version(s)**: v.7.8.0
+**NPM Version(s)**: 4.2.0
+**Browser Resolution(s)**: initially found at 1920 x 2063, but appears >768
+**Library Version**: 2.15.5
+
+**Additional context**
+
+- **Results**: Passed
+- **Line(s) of Code**: n/a
+- **Message**: n/a
+- **Console Errors**: 404 error on "svg/symbol-defs.svg"
+```
+
+### Testing
+
+It's helpful, but not required to run the test suite locally. If you have the time and energy it can increase the efficiency and decrease the effort required for us to fix things.
+
+There are typically two sides to test, CSS and JS. For the CSS, you can can run `npm run lint:css` to check for syntax errors that may cause issues. With regard to JS, the same applies; run `npm run lint:js` to check syntax errors and `npm run test:js` to test the JS components. You can also run linting and testing on both sides by running `npm run lint` and `npm test` respectively.
+
+<Steps>
+1. **Results**: If there is a fail in a particular test, include the name of the test, otherwise list as "Passed".
+2. **Line(s) of Code**: Definitely not a requirement, but doesn't hurt if you've already pin pointed the issue.
+3. **Message**: When the tests fail, a stack trace or message is typically output, so copy/paste that into the issue.
+</Steps>
+
+Now that you've created an issue, maybe you want to try your hand at fixing the issue? [Set up your environment](../maintaining/working-with-the-code).
+
+## What's Next?
+
+* The team will [label the issue](../maintaining/label-issues).
+* A team member will try to reproduce the issue with your provided steps. If there are no obvious ways to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-clarification`. Bugs with the `needs-clarification` tag will not be addressed until they are reproduced.
+* If the team is able to reproduce the issue, it will be marked `fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be implemented by someone.
+* If you or the maintainers don't respond to an issue for 30 days, the issue will be closed. If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
+* `critical` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.

@@ -1,0 +1,41 @@
+---
+title: Branching Strategy
+description: This document describes the governance and decision-making process for the @theholocron organization.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+<Aside type="danger">
+	All work requires a branch.
+	**We do not push directly to `main`!**<br />
+	_The only exception, at the time of this writing, is for tagging and releasing_
+</Aside>
+
+There are a lot of [various](http://nvie.com/posts/a-successful-git-branching-model/) [opinions](https://docs.microsoft.com/en-us/vsts/git/concepts/git-branching-guidance) on [branching](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) [strategies](https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/) and while all of them are great and have their place, they all tend to add a lot of overhead and maintenance with little value to the workflow. We prefer to use the simplified strategy known as [Github flow](https://guides.github.com/introduction/flow/).
+
+When working with any of our libraries, there's no need to prefix it with `feature/` or `hotfix/` or anything like that; Github's PR-style workflow allows for quick and disposable branches. Create branches off `main` and use descriptive names such as `create-donut-chart`, `refactor-dropdown` so that users can easily see what's being worked on.
+
+## Naming
+
+Branch names should short, concise and easy to understand the work that is being done.  While not a necessity, setting up `<tab>` completion for git branches can speed up the discovery of branch names. The following tips are designed to speed up your workflow with the addition of tab completion.
+
+* **Use only lower case letters**. Lowercasing makes it quicker to type by providing fewer letters to get working. Avoid upper case letters as it requires a higher level of dexterity that can decrease the speed of workflow
+* **Use dashes instead of underscores**. The same is true as above, they're are easier to type and require less dexterity.
+* **Don't prefix the branch name with any particular pattern**. Unless you regularly clean up your local branches, it's likely to increase the number of characters and tabbing through in order to complete the branch name you seek
+* **Don't include the ticket number**. Adding it falls into the same faults as suggestion 2 above; it requires a lot more typing in order to tab complete through to the branch you may want
+
+ When searching through a bunch of branches, `issue-123` doesn't provide any inherent value to the developer in hopes to find the feature they want to help out on; however seeing `modal-trigger-open` gives the developer some insight into what work is being done.
+
+## Examples
+
+An example of some well named branches:
+
+```shell
+// good
+git checkout -b fix-bug-x
+git checkout -b new-component
+
+// bad
+git checkout -b JIRA_1234
+git checkout -b tests
+```

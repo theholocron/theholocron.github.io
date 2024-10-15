@@ -1,0 +1,42 @@
+---
+title: Provide Support
+description: Helping out other users with their questions is a really awesome way of contributing to any community.
+---
+
+import CoC from "../../../components/CoC.astro";
+
+<CoC />
+
+Helping out other users with their questions is a really awesome way of contributing to any community. It's not uncommon for most of the issues on projects being support-related questions by users trying to understand something they ran into, or find their way around a known bug.
+
+Sometimes, the `support` label will be added to things that turn out to actually be other things, like bugs or feature requests. In that case, suss out the details with the person who filed the original issue, add a comment explaining what the bug is, and change the label from `support` to `fix` or `feat`. If you can't do this yourself, @mention a maintainer so they can do it.
+
+In order to help other folks out with their questions:
+
+* Go to the issue tracker and filter open issues by the `support` label.
+* Read through the list until you find something that you're familiar enough with to give an answer.
+* Respond to the issue with whatever details are needed to clarify the question, or get more details about what's going on.
+* Once the discussion wraps up and things are clarified, either close the issue, or ask the original issue filer (or a maintainer) to close it for you.
+
+Some notes on picking up support issues:
+
+* Avoid responding to issues you don't know you can answer accurately.
+* As much as possible, try to refer to past issues with accepted answers. Link to them from your replies with the `#123` format.
+* Be kind and patient with users -- often, folks who have run into confusing things might be upset or impatient. This is ok. Try to understand where they're coming from, and if you're too uncomfortable with the tone, feel free to stay away or withdraw from the issue. (note: if the user is outright hostile or is violating the CoC, [refer to the Code of Conduct](./CODE_OF_CONDUCT.md) to resolve the conflict).
+
+## Clean Up Issues and PRs
+
+**Permission Required**: [Contributor](../contributing/join-the-team#permissions)
+
+Issues and PRs can go stale after a while; maybe they're abandoned; maybe the team will not have time to address them any time soon.  In these cases, they should be closed until they're brought up again or the interaction starts over.
+
+To clean up issues and PRs:
+
+* Search the issue tracker for issues or PRs, and add the term `updated:<=YYYY-MM-DD`, where the date is 30 days before today.
+* Go through each issue *from oldest to newest*, and close them if **all of the following are true**:
+  * not opened by a maintainer
+  * not marked as `critical`
+  * not marked as `good first issue` or `help wanted` (these might stick around for a while, in general, as they're intended to be available)
+  * no explicit messages in the comments asking for it to be left open
+  * does not belong to a milestone
+* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See the MAINTAINING.md#clean-up-issues-and-prs for more details."

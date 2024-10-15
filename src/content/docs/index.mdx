@@ -1,36 +1,36 @@
 ---
-title: Welcome to Starlight
+title: Welcome to the Holocron Archives
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Inspired by the ancient data archives of Star Wars lore, The Holocron is a place where important code, configurations, and best practices are preserved for long-term use and growth.
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/org.avatar.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get started
+      link: /welcome/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: View on GitHub
+      link: https://github.com/theholocron
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
 ## Next steps
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+	<Card title="Contribute to a project" icon="pencil">
+		Pick a project, build a feature, [contribute](./contributing/).
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Create a Pull Request" icon="add-document">
+		Check out our guide for [creating a pull request](./contributing/pull-a-request).
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Ask a question" icon="setting">
+		Read our [support guide](./guides/support).
 	</Card>
 	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+		Learn more in our [docs](./guides/support).
 	</Card>
 </CardGrid>

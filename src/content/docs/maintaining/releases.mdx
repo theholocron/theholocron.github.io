@@ -1,0 +1,40 @@
+---
+title: Release
+description: A guide in my new Starlight docs site.
+---
+
+import CoC from "../../../components/CoC.astro";
+
+<CoC />
+
+**Permission Required**: [Owner](../contributing/join-the-team#permissions)
+
+At the time of this writing the process for releasing is not fully automated and requires some manual work; please read below for how we do it.
+
+For reference, we use [SemVer](https://semver.org/) for its versioning, providing us an opt-in approach to releases. This means we add a version number according to the spec, as you see below. So rather than force developers to consume the latest and greatest, they can choose which version to consume and test any newer ones before upgrading. Please the read the spec as it goes into further detail.
+
+Given a version number **MAJOR.MINOR.PATCH**, increment the:
+
+* **MAJOR** version when you make incompatible API changes.
+* **MINOR** version when you add functionality in a backward-compatible manner.
+* **PATCH** version when you make backward-compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the **MAJOR.MINOR.PATCH** format.
+
+## Determine the version
+
+After all features from the `next-release` label have been merged into the `main` branch then its time to determine the version number.
+
+Given we follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), versioning is based on the following rules:
+
+* if there is a `feat`, bump the `minor`
+* if there is only `fix` and `chore`, bump the `patch`
+* if there is only `chore`, do not bump the version
+
+If you want to verify that the release will match the above rules then run a dry run of the release script (`npm run release -- --dry-run`) and verify that the output of the command will match the expectations of the version you expect.
+
+## Release a Version
+
+Once a version has been determined, run `npm run release`. This will update the `version` key within the `package.json` and the `package-lock.json`, as well as generate the CHANGELOG, commit using our conventions and create the tag. **DO NOT USE the `npm version` command!**
+
+After running the script, the next step is to push to the remote using the following command: `git push --follow-tags origin main`

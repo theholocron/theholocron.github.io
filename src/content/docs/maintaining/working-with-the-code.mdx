@@ -1,0 +1,36 @@
+---
+title: Working With the Code
+description: If you're contributing to the codebase, its helpful to know the handful of commands that are used to ensure code is of the highest quality or allows you to visual your changes.
+---
+
+import CoC from "../../../components/CoC.astro";
+
+<CoC />
+
+If you're contributing to the codebase, its helpful to know the handful of commands that are used to ensure code is of the highest quality or allows you to visual your changes. Below is the list of tasks available.
+
+## Main Tasks
+
+These tasks are run most often, and most are required to pass checks before any feature can be approved.
+
+| Command         | Description | Notes |
+|-----------------|-------------| ----- |
+| `npm run build`  | Runs compliers to convert (S)CSS and [TJ]S(X) to browser-friendly code | No reason to run this unless you're debugging output of code. This is run as part of the publishing process, so ensuring it passes can help. |
+| `npm run lint`  | Runs the linting suite; includes markdown, (s)css, and [tj]s(x) | Husky will attempt to run this on every commit and auto-fix.  While it's not required for this to pass and you may bypass with the flag of `--no-verify`, its good to run to help debugging and ensure a faster PR process. |
+| `npm test`  | Runs the testing suite; includes sensitive language, (s)css, and [tj]s(x) | If the test coverage drops below the configured numbers, this will fail despite all tests pass.  In that event, you should see a message with the percentages to which it dropped.
+| `npm start` | Runs `storybook` or starts the local server to test development | Make sure all variations are covered and all props have knobs
+
+## Ancillary Tasks
+
+Not the main tasks that get run everyday, but in the event you need finer control or help, these may be available.
+
+| Command         | Description | Notes |
+|-----------------|-------------| ----- |
+| `npm run commit` | Runs the interactive `commitlint` for help contributing an [acceptable commit message](../reference/commit-conventions) | [https://commitlint.js.org](https://commitlint.js.org)
+| `npm run build:css` | Runs `node-sass` and `postcss` to compile the (S)CSS into CSS | [https://sass-lang.com](https://sass-lang.com), [https://postcss.org](https://postcss.org)
+| `npm run build:js` | Runs the compiler the [TJ]S(X) into JS | [http://typescriptlang.org](http://typescriptlang.org)
+| `npm run lint:css` | Runs `stylelint` to test the (S)CSS for style violations | [https://stylelint.io](https://stylelint.io)
+| `npm run lint:docs`  | Runs `alex` to test for sensitive language | [https://alexjs.com](https://alexjs.com)
+| `npm run lint:js` | Runs `eslint` to test the [TJ]S(X) for style violations | [https://eslint.org](https://eslint.org)
+| `npm run test:js`  | Runs `jest` for testing | [https://jestjs.io](https://jestjs.io)
+| `npm run docs` | Runs `storybook` to build out the `docs/` | [https://storybook.js.org](https://storybook.js.org)

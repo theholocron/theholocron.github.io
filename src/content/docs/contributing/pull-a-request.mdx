@@ -1,0 +1,42 @@
+---
+title: Create a Pull Request
+description: Want to create a new feature? Learn how to create a pull request.
+---
+
+import { Aside, Steps } from "@astrojs/starlight/components";
+import CoC from "../../../components/CoC.astro";
+
+<CoC />
+
+If you're unfamiliar with the Github flow, please [read this guide](https://guides.github.com/introduction/flow/index.html) as an introduction. Make sure you reach out to someone on the team before you start any work to ensure that what you're doing is aligned with the teams' vision. Read Ilya Grigorik's great article [Don't "Push" Your Pull Requests](https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/). The following passage sums up some great points:
+
+> Contributions are always welcome, but surprise patches are mostly just a burden. Yes, you are offering your help, but someone else will have to maintain your code over the long term - get their buy-in first, avoid surprises. Even worse, a localized change to address a specific problem will often miss the full implications to the project: other existing use cases, future roadmap plans, or overall architectural decisions. A good idea can be implemented inappropriately for the specific project; it can be invalidated by another effort that you may not even be aware of; the timing may be wrong, and a dozen other reasons can conspire against you.
+
+<Aside>
+By submitting a patch, you agree to the same license as that used by the project.
+</Aside>
+
+For those of you willing to help out, thanks!!! Here's a quick how to submit your changes to GitHub. This requires no need for access, rights or privileges and can be done without any help from a team member.
+
+<Steps>
+1. Fork It by pressing the "Fork" button in the top right corner.
+2. Clone your newly forked repo (`git clone https://github.com/<github-user>/<repo>`).
+3. Change into the directory you cloned (`cd <repo>`)
+4. Add your fork as a remote (`git remote add <github-user> https://github.com/<github-user>/<repo>`) where `<github-user>` is your actual Github username and `<repo>` is the repository with which you're looking to contribute.
+5. Create your feature branch (`git checkout -b <my-new-feature>`); checkout the guide below for our [branching strategy](../reference/branching-strategy)
+6. Commit your changes (`git commit`), following the [format suggested below](#commit-conventions). Please don't use the shortcut flag `git commit -m <message>` as there is more detail required than what is allowed by only using that flag.
+7. Push to the branch (`git push <github-user> <my-new-feature>`)
+8. Create a new Pull Request; make sure you fill in the Pull Request template.
+</Steps>
+
+<Aside type="caution">
+Every patch and subsequent message should have a bug attached. If there is no ticket, no work should be done.
+</Aside>
+
+### Gotchas
+
+- Please avoid working directly on the `main` branch.
+- Make commits of logical units.
+- Check for unnecessary whitespace with `git diff --check` before committing.
+- Make sure your commit messages are in the [proper format](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html), also listed below in our guides.
+

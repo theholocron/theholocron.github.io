@@ -1,0 +1,68 @@
+---
+title: Getting Started
+description: Get started contributing to the code around here at The Holocron.
+---
+
+import { CardGrid, LinkCard, Steps } from "@astrojs/starlight/components";
+import CoC from "../../../components/CoC.astro";
+
+<CoC />
+
+Third-party patches are essential for keeping open-source software great.  In the spirit of keeping it as simple as possible to contribute changes that get things working in your environment, here are a few guidelines that contributors should follow.  As [Nicholas Gallagher](http://github.com/necolas/normalize.css/blob/master/CONTRIBUTING.md) put it in his contributing guidelines:
+
+> Following these guidelines helps to communicate that you respect the time of the developers managing and developing […]. In return, they should reciprocate that respect in addressing your issue or assessing your patches and features.
+
+<Steps>
+1. Make sure you have a [GitHub account](https://github.com/join).
+2. Please ask anyone of the users in the repository's **CODEOWNERS** file before making significant changes.  We'd hate for you to put in a lot of work for something that doesn't align with the vision of the project.
+3. [Search on Github](https://github.com/search) within the repository for the issue or Pull Request. This means you have to read through the issue(s) in order to determine if your particular issue has already been created. Don't forget to look through the closed ones as well.
+4. If the issue has not been fixed then try to reproduce the issue in a fresh clone of the repository off the `main` branch. Read on [how to set up your environment](../maintaining/working-with-the-code).
+5. Create a [reduced test case](http://css-tricks.com/reduced-test-cases/) as outlined by Chris Coyier of [CSS Tricks](http://css-tricks.com/).  Link to the [Code Pen](http://codepen.io), [JS Bin](http://jsbin.com), or whatever you use, as long as its publicly accessible.
+6. Read our [branching strategy](../reference/branching-strategy), [commit conventions](../reference/commit-conventions) for tips on how to contribute. We won't accept any pull request that doesn't adhere, so be forewarned.
+</Steps>
+
+If this seems like a lot or you aren't able to do all this setup, you might also be able to [edit the files directly](https://help.github.com/articles/editing-files-in-another-user-s-repository/) without having to do any of this setup. Yes, [even code](./pull-a-request).
+
+## Ways to Contribute
+
+We look forward to your contributions. ✨
+
+<CardGrid>
+	<LinkCard
+		description="Call out something that is broken."
+		href="./contributing/report-an-issue"
+		title="Create an issue"
+	/>
+
+	<LinkCard
+		description="Suggest something new."
+		href="./contributing/request-a-feature"
+		title="Request a feature"
+	/>
+
+	<LinkCard
+		description="Want to contribute a feature or fix a bug?"
+		href="./contributing/update-the-documentation"
+		title="Update the documentation"
+	/>
+
+	<LinkCard
+		description="Need some guidance on how things are done around here."
+		href="./contributing/pull-a-request"
+		title="Create a pull request"
+	/>
+
+	<LinkCard
+		description="Need some guidance on how things are done around here."
+		href="./contributing/join-the-team"
+		title="Join the team"
+	/>
+</CardGrid>
+
+## Additional Resources
+
+- [Reduced Test Cases](http://css-tricks.com/reduced-test-cases/)
+- [General GitHub documentation](http://help.github.com/)
+- [GitHub Send Pull Request Documentation](http://help.github.com/send-pull-requests/)
+- [GitHub Using Pull Request Documentation](https://help.github.com/articles/using-pull-requests/)
+- [Forking a Github Repo](http://help.github.com/fork-a-repo/)

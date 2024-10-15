@@ -1,7 +1,19 @@
 {
-  "name": "",
+  "name": "@theholocron/theholocron.github.io",
+  "description": "The Holocron Archives.",
+  "homepage": "https://docs.theholocron.dev",
+  "author": "Newton Koumantzelis",
+  "version": "0.0.0",
   "type": "module",
-  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theholocron/theholocron.github.io.git"
+  },
+  "bugs": "https://github.com/theholocron/theholocron.github.io/issues",
+  "releases": "https://github.com/theholocron/theholocron.github.io/releases",
+  "wiki": "https://github.com/theholocron/theholocron.github.io/wiki",
+  "license": "GPL-3.0",
+  "packageManager": "npm@9.5.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,7 +24,9 @@
   "dependencies": {
     "@astrojs/starlight": "^0.28.3",
     "astro": "^4.15.3",
-    "sharp": "^0.32.5",
+    "sharp": "^0.32.5"
+  },
+  "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "typescript": "^5.6.3"
   }

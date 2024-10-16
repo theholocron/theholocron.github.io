@@ -1,29 +1,30 @@
 {
   "name": "@theholocron/theholocron.github.io",
+  "version": "1.0.0",
   "description": "The Holocron Archives.",
   "homepage": "https://docs.theholocron.dev",
-  "author": "Newton Koumantzelis",
-  "version": "0.0.0",
-  "type": "module",
+  "bugs": "https://github.com/theholocron/theholocron.github.io/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theholocron/theholocron.github.io.git"
   },
-  "bugs": "https://github.com/theholocron/theholocron.github.io/issues",
-  "releases": "https://github.com/theholocron/theholocron.github.io/releases",
-  "wiki": "https://github.com/theholocron/theholocron.github.io/wiki",
   "license": "GPL-3.0",
-  "packageManager": "npm@9.5.0",
+  "author": "Newton Koumantzelis",
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro check && astro build",
+    "dev": "astro dev",
+    "prepare": "husky",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
   "commitlint": {
     "extends": "@theholocron"
   },
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "prepare": "husky"
+  "prettier": "@theholocron",
+  "eslintConfig": {
+    "extends": "@theholocron"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.28.3",
@@ -32,8 +33,13 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
-    "@theholocron/commitlint-config": "^1.10.0",
-    "husky": "^9.1.6",
-    "typescript": "^5.6.3"
-  }
+    "@theholocron/commitlint-config": "^3.0.0",
+    "@theholocron/eslint-config": "^3.0.0",
+    "@theholocron/lint-staged-config": "^3.0.0",
+    "@theholocron/prettier-config": "^3.0.0",
+    "@theholocron/tsconfig": "^3.0.0"
+  },
+  "packageManager": "npm@9.5.0",
+  "releases": "https://github.com/theholocron/theholocron.github.io/releases",
+  "wiki": "https://github.com/theholocron/theholocron.github.io/wiki"
 }

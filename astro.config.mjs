@@ -13,6 +13,10 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: "Projects",
+					autogenerate: { directory: "projects" },
+				},
+				{
 					label: "Contributing",
 					items: [
 						"contributing",

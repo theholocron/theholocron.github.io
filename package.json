@@ -34,7 +34,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@theholocron/commitlint-config": "^3.0.0",
-    "@theholocron/eslint-config": "^3.0.0",
+    "@theholocron/eslint-config": "^3.1.0",
     "@theholocron/lint-staged-config": "^3.0.0",
     "@theholocron/prettier-config": "^3.0.0",
     "@theholocron/tsconfig": "^3.0.0"

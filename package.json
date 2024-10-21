@@ -37,7 +37,7 @@
     "@theholocron/eslint-config": "^3.0.0",
     "@theholocron/lint-staged-config": "^3.0.0",
     "@theholocron/prettier-config": "^3.0.0",
-    "@theholocron/tsconfig": "^3.0.0"
+    "@theholocron/tsconfig": "^3.1.0"
   },
   "packageManager": "npm@9.5.0",
   "releases": "https://github.com/theholocron/theholocron.github.io/releases",

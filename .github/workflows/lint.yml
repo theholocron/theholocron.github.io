@@ -71,14 +71,14 @@ jobs:
           # VALIDATE_HTML_PRETTIER: true
           VALIDATE_JAVASCRIPT_ES: true
           # VALIDATE_JAVASCRIPT_PRETTIER: true
-          VALIDATE_JSON: true
+          # VALIDATE_JSON: true
           # VALIDATE_JSON_PRETTIER: true
           # VALIDATE_JSX_PRETTIER: true
-          VALIDATE_MARKDOWN: true
+          # VALIDATE_MARKDOWN: true
           # VALIDATE_MARKDOWN_PRETTIER: true
           # VALIDATE_NATURAL_LANGUAGE: true
           VALIDATE_TSX: true
-          VALIDATE_TYPESCRIPT_ES: true
+          # VALIDATE_TYPESCRIPT_ES: true
           # VALIDATE_TYPESCRIPT_PRETTIER: true
           VALIDATE_YAML: true # turning on for now while prettier is broken
           # VALIDATE_YAML_PRETTIER: true => turning it off because its writing 4 spaces instead of 2

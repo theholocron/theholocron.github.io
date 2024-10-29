@@ -41,8 +41,8 @@ Decisions are made in a collaborative, consensus-based manner, with input from a
 2. **Discussion**: Community members and maintainers discuss the proposal in the issue or pull request thread.
 3. **Review**: Maintainers and committers review the discussion and offer feedback or approvals.
 4. **Decision**:
-    - If consensus is reached, the proposal is accepted and merged.
-    - If there is no clear consensus, maintainers will make the final decision, considering community input.
+	- If consensus is reached, the proposal is accepted and merged.
+	- If there is no clear consensus, maintainers will make the final decision, considering community input.
 
 ## Code of Conduct
 

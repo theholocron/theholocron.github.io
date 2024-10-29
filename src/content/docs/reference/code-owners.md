@@ -13,7 +13,7 @@ Code Owners is a powerful way to define individuals or teams that are responsibl
 
 ### What does it look like?
 
-All teams are required to add the file within the `.github/` directory on the root of the repository.  The format is the same as `.gitignore` which is followed by one or more GitHub usernames or team names using the standard @username or @org/team-name format. You can also refer to a user by an email address that has been added to their GitHub account, for example user@example.com.
+All teams are required to add the file within the `.github/` directory on the root of the repository. The format is the same as `.gitignore` which is followed by one or more GitHub usernames or team names using the standard @username or @org/team-name format. You can also refer to a user by an email address that has been added to their GitHub account, for example user@example.com.
 
 ```
 # This is a comment.
@@ -42,5 +42,4 @@ All teams are required to add the file within the `.github/` directory on the ro
 
 ### Why do I need one?
 
-As you can see from the example above, it automates the need to ask developers to review code.  Even further, we can use [GitHub's branch protection](https://help.github.com/en/articles/configuring-protected-branches) to ensure that code isn't pushed through if the code owner(s) aren't consulted. The other side effect is providing outside contributors the knowledge of knowing whom to ask when looking to fix or improve library code.  One should always reach out to someone on the team before making significant changes. We'd hate for you to put in a lot of work for something that doesn't align with the vision of this project.
-
+As you can see from the example above, it automates the need to ask developers to review code. Even further, we can use [GitHub's branch protection](https://help.github.com/en/articles/configuring-protected-branches) to ensure that code isn't pushed through if the code owner(s) aren't consulted. The other side effect is providing outside contributors the knowledge of knowing whom to ask when looking to fix or improve library code. One should always reach out to someone on the team before making significant changes. We'd hate for you to put in a lot of work for something that doesn't align with the vision of this project.

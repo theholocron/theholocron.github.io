@@ -16,28 +16,24 @@ Features…
 
 **TL;DR**
 
-<Steps>
-1. Open a bug report
-2. Fill out the template
-3. Provide as much context as you can
-</Steps>
+<Steps>1. Open a bug report 2. Fill out the template 3. Provide as much context as you can</Steps>
 
 ## Filling out the ticket
 
 Bug reports should be thorough and not leave anyone wondering or questioning what you were thinking. No one should have to ask you anything or require further clarification. When creating a ticket, use the **Bug Report template** within the repository to populate a lot of the information required. Below is a brief description of the parts of a bug report:
 
-* **title** (required): should be concise and descriptive. Anyone should be able to know what you're issue is at a glance and doesn't need the complete issue in it; try to keep it under 80 characters.
-* **description**: create a short summary of what is happening or what you're seeing.
-* **to reproduce** (required): the steps you followed to find this bug. This will make life so much easier to help fix the issue. Don't make any assumptions that someone will be on the same page or do the same thing as you. Nice and direct steps of what happened, what you clicked on can ease the time for us to debug.
-* **expected behavior** (required): let us know what you were expecting to happen. This may or may not align with the project, so be very detailed with this part; the more detail the better.
-* **screenshots**: a picture is worth a thousand words.
-* **device details** (required): for most of the information you can look at [https://www.whatsmybrowser.org](https://www.whatsmybrowser.org); for others check out below for how to find them.
-    * **OS & version**: Always include the OS(es) and version(s) where you found the issue. If, for example its Mavericks, you can put OSX 10.9.1.
-    * **Browser(s) Version(s)**: Which browsers have you tested this in? What version are you running?
-    * **Node Version(s)**: Not always required, but if there is something erring in the console, this is quite helpful.
-    * **NPM Version(s)**: Not always required, but if there is something erring in the console, this is quite helpful.
-    * **Browser Resolution**: Include resolutions as more of a range rather than an absolute. For example, `< 768px or >= 768px && <= 1024px`
-    * **Library Version**: Required; please include which version of this library you're using
+-   **title** (required): should be concise and descriptive. Anyone should be able to know what you're issue is at a glance and doesn't need the complete issue in it; try to keep it under 80 characters.
+-   **description**: create a short summary of what is happening or what you're seeing.
+-   **to reproduce** (required): the steps you followed to find this bug. This will make life so much easier to help fix the issue. Don't make any assumptions that someone will be on the same page or do the same thing as you. Nice and direct steps of what happened, what you clicked on can ease the time for us to debug.
+-   **expected behavior** (required): let us know what you were expecting to happen. This may or may not align with the project, so be very detailed with this part; the more detail the better.
+-   **screenshots**: a picture is worth a thousand words.
+-   **device details** (required): for most of the information you can look at [https://www.whatsmybrowser.org](https://www.whatsmybrowser.org); for others check out below for how to find them.
+    -   **OS & version**: Always include the OS(es) and version(s) where you found the issue. If, for example its Mavericks, you can put OSX 10.9.1.
+    -   **Browser(s) Version(s)**: Which browsers have you tested this in? What version are you running?
+    -   **Node Version(s)**: Not always required, but if there is something erring in the console, this is quite helpful.
+    -   **NPM Version(s)**: Not always required, but if there is something erring in the console, this is quite helpful.
+    -   **Browser Resolution**: Include resolutions as more of a range rather than an absolute. For example, `< 768px or >= 768px && <= 1024px`
+    -   **Library Version**: Required; please include which version of this library you're using
 
 Don't be afraid to go into detail; no one ever said too much detail was a problem, and if they did, it wasn't us.
 
@@ -72,10 +68,10 @@ the other assets on the page, ie text, components, modules, etc
 
 **Additional context**
 
-- **Results**: Passed
-- **Line(s) of Code**: n/a
-- **Message**: n/a
-- **Console Errors**: 404 error on "svg/symbol-defs.svg"
+-   **Results**: Passed
+-   **Line(s) of Code**: n/a
+-   **Message**: n/a
+-   **Console Errors**: 404 error on "svg/symbol-defs.svg"
 ```
 
 ### Testing
@@ -85,17 +81,17 @@ It's helpful, but not required to run the test suite locally. If you have the ti
 There are typically two sides to test, CSS and JS. For the CSS, you can can run `npm run lint:css` to check for syntax errors that may cause issues. With regard to JS, the same applies; run `npm run lint:js` to check syntax errors and `npm run test:js` to test the JS components. You can also run linting and testing on both sides by running `npm run lint` and `npm test` respectively.
 
 <Steps>
-1. **Results**: If there is a fail in a particular test, include the name of the test, otherwise list as "Passed".
-2. **Line(s) of Code**: Definitely not a requirement, but doesn't hurt if you've already pin pointed the issue.
-3. **Message**: When the tests fail, a stack trace or message is typically output, so copy/paste that into the issue.
+	1. **Results**: If there is a fail in a particular test, include the name of the test, otherwise list as "Passed".
+	2. **Line(s) of Code**: Definitely not a requirement, but doesn't hurt if you've already pin pointed the issue. 3.
+	**Message**: When the tests fail, a stack trace or message is typically output, so copy/paste that into the issue.
 </Steps>
 
 Now that you've created an issue, maybe you want to try your hand at fixing the issue? [Set up your environment](../maintaining/working-with-the-code).
 
 ## What's Next?
 
-* The team will [label the issue](../maintaining/label-issues).
-* A team member will try to reproduce the issue with your provided steps. If there are no concrete ways to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-clarification`. Bugs with the `needs-clarification` tag will not be addressed until they are reproduced.
-* If the team is able to reproduce the issue, it will be marked `fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be implemented by someone.
-* If you or the maintainers don't respond to an issue for 30 days, the issue will be closed. If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
-* `critical` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.
+-   The team will [label the issue](../maintaining/label-issues).
+-   A team member will try to reproduce the issue with your provided steps. If there are no concrete ways to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-clarification`. Bugs with the `needs-clarification` tag will not be addressed until they are reproduced.
+-   If the team is able to reproduce the issue, it will be marked `fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be implemented by someone.
+-   If you or the maintainers don't respond to an issue for 30 days, the issue will be closed. If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
+-   `critical` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.

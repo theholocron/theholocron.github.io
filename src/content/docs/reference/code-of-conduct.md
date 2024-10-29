@@ -23,8 +23,8 @@ Examples of behavior that contributes to creating a positive environment include
 
 Examples of unacceptable behavior by participants include:
 
--   The use of sexualized language or imagery and unwelcome sexual attention or advances
--   Trolling, insulting/derogatory comments, and personal or political attacks
+-   The use of sexualized language, imagery and/or unwelcome attention or advances
+-   Trolling, insulting/derogatory comments, and personal or political criticisms
 -   Public or private harassment
 -   Publishing others' private information, such as a physical or electronic address, without explicit permission
 -   Other conduct which could reasonably be considered inappropriate in a professional setting
@@ -59,7 +59,7 @@ Community leaders will follow these Community Impact Guidelines in determining t
 
 **Community Impact**: A violation through a single incident or series of actions.
 
-**Consequence**: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.
+**Consequence**: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified amount of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.
 
 ### 3. Temporary Ban
 
@@ -82,16 +82,16 @@ This Code of Conduct is adapted from the [Contributor Covenant](http://contribut
 -   Use labels like help wanted or good first issue to guide people to issues they can work on if they are new to the project.
 -   When running benchmarks, show the authors of the framework/library/etc the code you’re going to run to benchmark on before running it. Allow them to PR (it’s ok to give a deadline). That way when your benchmark is run you know they have your approval and it’s as fair as possible. This also fixes issues like benchmarking dev instead of prod or some user errors.
 -   When you ask someone for help or label an issue help wanted and someone PRs, please write a comment explaining why you are closing it if you decide not to merge. It’s disrespectful of their time otherwise, as they were following your call to action. I would even go so far as to say it would be nice to comment on any PR that you close OR merge, to explain why or say thank you, respectively.
--   Don’t close a PR from an active contributor and reimplement the same thing yourself. Just… don’t do this.
--   If a fight breaks out on an issue that gets personal, shut it down to core maintainers as soon as possible. Lock the issue and ensure to enforce the code of conduct if necessary.
+-   Don’t close a PR from an active contributor and reimplement the same thing yourself. Do not do this.
+-   If a argument breaks out on an issue that gets personal, shut it down to core maintainers as soon as possible. Lock the issue and ensure to enforce the code of conduct if necessary.
 
 ## For the User
 
 -   Saying thank you for the project before making an inquiry about a new feature or filing a bug is usually appreciated.
 -   When opening an issue, create a small, isolated, simple, reproduction of the issue using an online code editor (like codepen or codesandbox) if possible and a GitHub repository if not. The process may help you discover the underlying issue (or realize that it’s not an issue with the project). It will also make it easier for maintainers to help you resolve the problem.
--   When opening an issue, please suggest a solution to the problem. Take a few minutes to do a little digging. This [blog post](https://blog.kentcdodds.com/what-open-source-project-should-i-contribute-to-7d50ecfe1cb4) has a few suggestions for how to dive into the source code a little. If you’re not sure, explain you’re unsure what to do.
+-   When opening an issue, please suggest a solution to the problem. Take a few minutes to do a little digging. This [blog post](https://blog.kentcdodds.com/what-open-source-project-should-i-contribute-to-7d50ecfe1cb4) has a few suggestions for how to explore the source code a little. If you’re not sure, explain you’re unsure what to do.
 -   When opening an issue, if you’re unable to resolve it yourself, please explain that. The expectation is that you resolve the issues you bring up. If someone else does it, that’s a gift they’re giving to you (so you should express the appropriate gratitude in that case).
--   Don’t file issues that say things like “is this even maintained anymore?” A comment like this is insulting to the time they have put in, it reads as though the project is not valid anymore just because they needed a break, or were working on something else, or their parent died or they had a kid or any other myriad human reasons for not being at the beck and call of code. It’s totally ok to ask if there’s a roadmap for the future, or to decide based on past commits that it’s not maintained enough for your liking. It’s not ok to be passive aggressive to someone who created something for you for free.
+-   Don’t file issues that say things like “is this even maintained anymore?” A comment like this is insulting to the time they have put in, it reads as though the project is not valid anymore because they needed a break, or were working on something else, or they had a child or any other myriad human reasons for not being at the beck and call of code. It’s totally okay to ask if there’s a roadmap for the future, or to decide based on past commits that it’s not maintained enough for your liking. It’s not okay to be passive aggressive to someone who created something for you for free.
 -   If someone respectfully declines a PR because, though valid code, it’s not the direction they’d like to take the project, don’t keep commenting on the pull request.
 -   When you want to submit a really large pull request to a project you’re not a core contributor on, it’s a good idea to ask via an issue if the direction you’d like to go makes sense. This also means you’re more likely to get the pull request merged because you have given them a heads up and communicated the plan. Better yet, break it into smaller pull requests so that it’s not too much to grok at one time.
 -   Avoid entitlement. The maintainers of the project don’t owe you anything. When you start using the project, it becomes your responsibility to help maintain it. If you don’t like the way the project is being maintained, be respectful when you provide suggestions and offer help to improve the situation.

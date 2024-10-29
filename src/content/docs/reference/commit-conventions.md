@@ -11,8 +11,8 @@ All changes should be connected and without 1 change your entire commit would fa
 
 A few tips to consider:
 
--   Absolutely no working directly on the master branch!!!
--   Check for unnecessary whitespace with `git diff --check` before committing.
+-   Absolutely no working directly on the main branch!!!
+-   Check for unnecessary blank space with `git diff --check` before committing.
 -   And be sure to run git commit and NOT `git commit -m <message>` so that you can fill out the body of the message
 
 ## Parts of a Commit

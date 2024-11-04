@@ -32,7 +32,7 @@
     "@theholocron/lint-staged-config": "^3.4.4",
     "@theholocron/prettier-config": "^3.4.4",
     "@theholocron/storybook-config": "^3.4.4",
-    "@theholocron/stylelint-config": "^3.4.4",
+    "@theholocron/stylelint-config": "^3.5.1",
     "@theholocron/tsconfig": "^3.4.4",
     "alexjs": "^1.0.0"
   },

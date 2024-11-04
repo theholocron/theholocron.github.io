@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
-    "@theholocron/commitlint-config": "^3.4.4",
+    "@theholocron/commitlint-config": "^3.5.1",
     "@theholocron/eslint-config": "^3.4.4",
     "@theholocron/jest-config": "^3.4.4",
     "@theholocron/lint-staged-config": "^3.4.4",

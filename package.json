@@ -33,7 +33,7 @@
     "@theholocron/prettier-config": "^3.4.4",
     "@theholocron/storybook-config": "^3.4.4",
     "@theholocron/stylelint-config": "^3.4.4",
-    "@theholocron/tsconfig": "^3.4.4",
+    "@theholocron/tsconfig": "^3.5.1",
     "alexjs": "^1.0.0"
   },
   "packageManager": "npm@9.5.0",

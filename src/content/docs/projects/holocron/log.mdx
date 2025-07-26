@@ -35,16 +35,16 @@ Log file names by level:
 
 ## 🧠 Behavior
 
--   Streams the selected log file line-by-line.
--   Buffers only the last `maxLines` lines for display.
--   Parses each log line with expected format: `YYYY-MM-DD HH:mm:ss LEVEL: Message [tags]`
--   Outputs the following with colors:
-    -   **Timestamp** in yellow brackets
-    -   **Log level** in bold red
-    -   **Message** in white
-    -   **Bracketed tags** in magenta
-    -   **Line numbers** in gray
--   Lines not matching the pattern are printed with bracketed tags colored magenta and line number prepended.
+- Streams the selected log file line-by-line.
+- Buffers only the last `maxLines` lines for display.
+- Parses each log line with expected format: `YYYY-MM-DD HH:mm:ss LEVEL: Message [tags]`
+- Outputs the following with colors:
+	- **Timestamp** in yellow brackets
+	- **Log level** in bold red
+	- **Message** in white
+	- **Bracketed tags** in magenta
+	- **Line numbers** in gray
+- Lines not matching the pattern are printed with bracketed tags colored magenta and line number prepended.
 
 ## 💡 Examples
 
@@ -61,11 +61,11 @@ holocron log -l warn -o 10
 
 ## ⚠️ Notes
 
--   The command expects the log files to exist at the configured logs directory.
--   If the log file is missing or unreadable, the command will throw an error.
--   Future improvements could add "follow" mode to tail logs in real-time.
+- The command expects the log files to exist at the configured logs directory.
+- If the log file is missing or unreadable, the command will throw an error.
+- Future improvements could add "follow" mode to tail logs in real-time.
 
 ## 🧵 Return Codes
 
--   `0` — Logs displayed successfully.
--   `1` — Error occurred (e.g., file not found).
+- `0` — Logs displayed successfully.
+- `1` — Error occurred (e.g., file not found).

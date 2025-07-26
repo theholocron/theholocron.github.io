@@ -1,0 +1,77 @@
+---
+title: ⚙️ `conf`
+description: Manage the Holocron configuration file using subcommands to add, edit, or view configuration keys and values.
+---
+
+Manage the Holocron configuration file using subcommands to add, edit, or view configuration keys and values.
+
+## 🧪 Usage
+
+```bash
+holocron conf <command> [options]
+```
+
+## 📘 Subcommands
+
+### `add <name> <value>`
+
+Add or update a key in the configuration file.
+
+-   If the existing value at `name` is an array, the new value will be added uniquely.
+-   If the existing value at `name` is an object, it will be shallow-merged with the new value.
+-   Otherwise, the value will be overwritten.
+
+Returns the updated config object or array for the specified key.
+
+```bash
+holocron conf add someKey someValue
+```
+
+### `edit`
+
+Open the configuration file in the system’s default editor for manual editing.
+
+```bash
+holocron conf edit
+```
+
+### `view [name...]`
+
+View configuration entries.
+
+-   With no arguments, prints the entire configuration.
+-   With one or more keys, prints only those keys and their values.
+
+```bash
+holocron conf view
+holocron conf view apiKey domains
+```
+
+## ⚙️ Subcommand Options and Arguments
+
+| Subcommand | Arguments        | Description                               |
+| ---------- | ---------------- | ----------------------------------------- |
+| `add`      | `<name> <value>` | Key and value to add/update in the config |
+| `edit`     | _(none)_         | Opens config in editor                    |
+| `view`     | `[name...]`      | Optional list of keys to view             |
+
+## 💡 Examples
+
+```bash
+# Add a new key or update existing
+holocron conf add domains "example.com"
+
+# Edit config manually
+holocron conf edit
+
+# View entire config
+holocron conf view
+
+# View specific keys
+holocron conf view domains apiKey
+```
+
+## 🧵 Return Codes
+
+-   `0` — Success.
+-   `1` — Error occurred (e.g., invalid key, file access issues).

@@ -1,0 +1,71 @@
+---
+title: 📜 `log`
+description: Print the last lines of a specified log file with enhanced, colorized formatting.
+---
+
+Print the last lines of a specified log file with enhanced, colorized formatting.
+
+## 🧪 Usage
+
+```bash
+holocron log [options]
+```
+
+## ⚙️ Options
+
+| Option           | Alias         | Type   | Default | Description                                                                                       |
+| ---------------- | ------------- | ------ | ------- | ------------------------------------------------------------------------------------------------- |
+| `--level`, `-l`  | `--log-level` | string | `all`   | Select the log level file to display. Options: `all`, `error`, `warn`, `info`, `verbose`, `debug` |
+| `--output`, `-o` | `--max-lines` | number | `20`    | Number of last lines to show from the log file.                                                   |
+
+## 📂 Log Files
+
+The command reads logs from the directory configured at `preferences.logs` in your config.
+
+Log file names by level:
+
+| Level     | Log File      |
+| --------- | ------------- |
+| `all`     | `log`         |
+| `error`   | `error.log`   |
+| `warn`    | `warn.log`    |
+| `info`    | `info.log`    |
+| `verbose` | `verbose.log` |
+| `debug`   | `debug.log`   |
+
+## 🧠 Behavior
+
+- Streams the selected log file line-by-line.
+- Buffers only the last `maxLines` lines for display.
+- Parses each log line with expected format: `YYYY-MM-DD HH:mm:ss LEVEL: Message [tags]`
+- Outputs the following with colors:
+	- **Timestamp** in yellow brackets
+	- **Log level** in bold red
+	- **Message** in white
+	- **Bracketed tags** in magenta
+	- **Line numbers** in gray
+- Lines not matching the pattern are printed with bracketed tags colored magenta and line number prepended.
+
+## 💡 Examples
+
+```bash
+# Show last 20 lines of all logs (default)
+holocron log
+
+# Show last 50 lines of error logs
+holocron log --level error --output 50
+
+# Using shorthand flags
+holocron log -l warn -o 10
+```
+
+## ⚠️ Notes
+
+- The command expects the log files to exist at the configured logs directory.
+- If the log file is missing or unreadable, the command will throw an error.
+- Future improvements could add "follow" mode to tail logs in real-time.
+
+## 🧵 Return Codes
+
+- `0` — Logs displayed successfully.
+- `1` — Error occurred (e.g., file not found).

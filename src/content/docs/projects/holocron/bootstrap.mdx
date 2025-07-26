@@ -1,0 +1,61 @@
+---
+title: 🚀 `bootstrap`
+description: Bootstrap a new Holocron-based project by updating key metadata in a project directory, such as the name, description, and internal config references.
+---
+
+Bootstrap a new Holocron-based project by updating key metadata in a project directory, such as the name, description, and internal config references.
+
+## 🧪 Usage
+
+```
+holocron bootstrap [filepath] [--name <name>] [--description <description>]
+```
+
+## 🧾 Description
+
+This command walks you through updating a project template (like `cli-template`, `react-template`, etc.) by replacing template variables in key files such as:
+
+-   `README.md`
+-   `package.json`
+-   `tsconfig.json`
+-   `vite.config.ts`
+-   `.changeset/config.json`
+-   and others depending on the template type
+
+It can determine the project name from the Git remote or `package.json`, and prompts for anything not passed via options.
+
+## 📘 Positional Arguments
+
+| Argument   | Description                              |
+| ---------- | ---------------------------------------- |
+| `filepath` | (Optional) Path to the project directory |
+
+## ⚙️ Options
+
+| Option          | Description                                | Type     |
+| --------------- | ------------------------------------------ | -------- |
+| `--name`        | Name of the project (used in replacements) | `string` |
+| `--description` | Description of the project                 | `string` |
+
+## 🧠 Behavior
+
+-   Prompts for `name` and `description` if not provided via CLI flags.
+-   Uses `.git/config` to extract the repo name as a fallback default.
+-   Infers template type from the `package.json`'s `name` field.
+-   Replaces all instances of the template type in config files with the new name.
+-   Special handling for `cli-template`: also updates `.env` and `src/cli.ts` with a constant-cased name.
+
+## 💡 Examples
+
+```bash
+# Bootstrap from current directory with prompts
+holocron bootstrap
+
+# Bootstrap with all values provided
+holocron bootstrap ./apps/docs --name docs --description "Documentation site"
+```
+
+## 🧵 Return Codes
+
+-   `0` — Success, bootstrap completed.
+-   `1` — Failure, e.g. project not found or invalid path.

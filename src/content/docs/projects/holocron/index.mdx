@@ -1,0 +1,73 @@
+---
+title: Holocron CLI
+description: Small utilities.
+---
+
+import { LinkButton } from "@astrojs/starlight/components";
+
+The `holocron` command-line interface lets you interact with Holocron tools and configuration through a variety of commands.
+
+<LinkButton href="https://github.com/theholocron/holocron" icon="github" iconPlacement="start" variant="minimal">
+	Check out **@theholocron**/holocron
+</LinkButton>
+
+## 📦 Installation
+
+```bash
+npm install --global @theholocron/holocron
+```
+
+## 🧪 Usage
+
+```bash
+holocron <command> [subcommand] [options]
+```
+
+## 🌐 Global Options
+
+These flags are available for all commands:
+
+| Option      | Alias | Type    | Default                          | Description             | Notes             |
+| ----------- | ----- | ------- | -------------------------------- | ----------------------- | ----------------- |
+| `--debug`   | `-d`  | boolean | `false` (or from config/env var) | Enable debugging output | Hidden by default |
+| `--sound`   | `-s`  | boolean | `false` (or from config/env var) | Enable sound effects    | Hidden by default |
+| `--verbose` |       | boolean | `false` (or from env var)        | Enable verbose logging  | Visible           |
+| `--help`    | `-h`  | boolean |                                  | Show help information   |                   |
+| `--version` | `-v`  | boolean |                                  | Show CLI version        |                   |
+
+## 📚 Commands
+
+The CLI dynamically loads commands from the internal `commands` directory. Currently, key commands include:
+
+-   [`bootstrap`](./bootstrap): Initialize a new Holocron project template.
+-   [`conf`](./conf): Manage the Holocron configuration file (with subcommands: `add`, `edit`, `view`).
+-   [`log`](./log): View logs with colorized output and filtering by log level.
+
+## ⚙️ Features
+
+-   Environment variables prefixed with `HOLOCRON_` automatically configure the CLI.
+-   Command-line completion is enabled (`--completion`).
+-   Strict command and option parsing with recommendations for mistyped commands.
+-   Update notifier prompts when a new CLI version is available.
+
+## 💡 Examples
+
+```bash
+# Bootstrap a project with prompts
+holocron bootstrap
+
+# Add a configuration key
+holocron conf add apiKey 123abc
+
+# Edit the configuration file
+holocron conf edit
+
+# View specific configuration keys
+holocron conf view apiKey domains
+
+# Show last 20 lines of error logs
+holocron log --level error --output 20
+
+# Enable verbose logging for debugging
+holocron log --verbose
+```

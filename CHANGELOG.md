@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/theholocron/theholocron.github.io/compare/v1.1.0...v1.2.0) (2025-07-26)
+
+
+### Features
+
+* add in docs for all current projects ([#74](https://github.com/theholocron/theholocron.github.io/issues/74)) ([5121499](https://github.com/theholocron/theholocron.github.io/commit/5121499dce160b8957a46b7d8d146856700afb59))
+
 ## [1.1.0](https://github.com/theholocron/theholocron.github.io/compare/1.0.0...v1.1.0) (2024-10-29)
 
 

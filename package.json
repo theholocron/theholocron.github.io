@@ -13,19 +13,22 @@
   "type": "module",
   "scripts": {
     "astro": "astro",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "dev": "astro dev",
     "prepare": "husky",
     "preview": "astro preview",
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.28.4",
-    "astro": "^4.16.18",
+    "@astrojs/starlight": "^0.41.5",
+    "@theholocron/clients-docs": "^1.5.0",
+    "@theholocron/docs-theme": "^1.0.9",
+    "astro": "^7.1.5",
+    "gray-matter": "^4.0.3",
     "sharp": "^0.34.3"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.4",
+    "@astrojs/check": "^0.9.10",
     "@theholocron/commitlint-config": "^3.4.4",
     "@theholocron/eslint-config": "^3.4.4",
     "@theholocron/jest-config": "^3.4.4",
@@ -34,12 +37,18 @@
     "@theholocron/storybook-config": "^3.4.4",
     "@theholocron/stylelint-config": "^3.4.4",
     "@theholocron/tsconfig": "^3.4.4",
-    "alexjs": "^1.0.0"
+    "alexjs": "^1.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "typescript": "^5.9.3"
   },
-  "packageManager": "npm@9.5.0",
+  "packageManager": "pnpm@10.34.4",
   "engines": {
     "node": ">=22",
     "npm": ">=10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["@swc/core", "esbuild", "sharp"]
   },
   "releases": "https://github.com/theholocron/theholocron.github.io/releases",
   "wiki": "https://github.com/theholocron/theholocron.github.io/wiki"

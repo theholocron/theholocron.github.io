@@ -1,9 +1,6 @@
-import theHolocron from "@theholocron/eslint-config";
+import { base, typescript } from "@theholocron/eslint-config";
 
-/**
- * @see https://eslint.org/docs/latest/use/configure/
- * @type {import("eslint").Linter.Config}
- */
-const config = [...theHolocron];
+/** @type {import("eslint").Linter.Config[]} */
+const config = [...base(), ...typescript(), { ignores: [".astro/**", "dist/**"] }];
 
 export default config;

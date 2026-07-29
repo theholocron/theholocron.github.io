@@ -29,17 +29,17 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "@theholocron/commitlint-config": "^3.4.4",
-    "@theholocron/eslint-config": "^3.4.4",
-    "@theholocron/jest-config": "^3.4.4",
-    "@theholocron/lint-staged-config": "^3.4.4",
-    "@theholocron/prettier-config": "^3.4.4",
-    "@theholocron/storybook-config": "^3.4.4",
-    "@theholocron/stylelint-config": "^3.4.4",
-    "@theholocron/tsconfig": "^3.4.4",
-    "alexjs": "^1.0.0",
+    "@theholocron/commitlint-config": "^7.6.1",
+    "@theholocron/eslint-config": "^7.6.1",
+    "@theholocron/lint-staged-config": "^7.6.1",
+    "@theholocron/prettier-config": "^7.6.1",
+    "@theholocron/tsconfig": "^7.6.1",
+    "eslint": "^10.8.0",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
+    "globals": "^17.8.0",
     "husky": "^9.0.0",
-    "lint-staged": "^15.0.0",
+    "lint-staged": "^16.0.0",
+    "sort-package-json": "^4.0.0",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.34.4",
@@ -48,7 +48,11 @@
     "npm": ">=10"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["@swc/core", "esbuild", "sharp"]
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild",
+      "sharp"
+    ]
   },
   "releases": "https://github.com/theholocron/theholocron.github.io/releases",
   "wiki": "https://github.com/theholocron/theholocron.github.io/wiki"

@@ -1,20 +1,24 @@
-// @ts-check
-import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import { docsTheme } from "@theholocron/docs-theme";
+import { defineConfig } from "astro/config";
 
-// https://astro.build/config
 export default defineConfig({
 	site: "https://docs.theholocron.dev",
 	integrations: [
 		starlight({
 			title: "The Holocron",
-			social: {
-				github: "https://github.com/theholocron",
-			},
+			plugins: [docsTheme()],
+			social: [
+				{
+					icon: "github",
+					label: "GitHub",
+					href: "https://github.com/theholocron",
+				},
+			],
 			sidebar: [
 				{
 					label: "Projects",
-					autogenerate: { directory: "projects" },
+					items: [{ autogenerate: { directory: "projects" } }],
 				},
 				{
 					label: "Contributing",
@@ -40,17 +44,11 @@ export default defineConfig({
 				},
 				{
 					label: "Guides",
-					autogenerate: { directory: "guides" },
-					/*
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: "Example Guide", slug: 'guides/example' },
-					],
-					*/
+					items: [{ autogenerate: { directory: "guides" } }],
 				},
 				{
 					label: "Reference",
-					autogenerate: { directory: "reference" },
+					items: [{ autogenerate: { directory: "reference" } }],
 				},
 			],
 		}),

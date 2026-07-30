@@ -1,9 +1,8 @@
-import { createHash } from "node:crypto";
-import { existsSync, readFileSync } from "node:fs";
-import { readdir } from "node:fs/promises";
+import { existsSync } from "node:fs";
+import { readdir, readFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { dirname, extname, join, relative } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 import type { Loader, LoaderContext } from "astro/loaders";
 import { JSON_SCHEMA, load as loadYaml } from "js-yaml";
@@ -46,7 +45,7 @@ function parseFrontmatter(raw: string): { data: Record<string, unknown>; content
 	const match = /^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*\r?\n?([\s\S]*)$/.exec(raw);
 	if (!match) return { data: {}, content: raw };
 	const yamlStr = match[1];
-	const content = match[2];
+	const content = match[2] ?? "";
 	const parsed = loadYaml(yamlStr, { schema: JSON_SCHEMA });
 	const data =
 		parsed !== null && typeof parsed === "object" && !Array.isArray(parsed)
@@ -58,9 +57,6 @@ function parseFrontmatter(raw: string): { data: Record<string, unknown>; content
 function resolvePackageContentDir(packageName: string, root: URL): string {
 	const req = createRequire(root);
 	const main = req.resolve(packageName);
-	// Walk up from the resolved entry to the directory containing package.json.
-	// More robust than resolving `<pkg>/package.json` directly — that subpath
-	// isn't guaranteed to be in the package's exports map.
 	let dir = dirname(main);
 	while (dir !== dirname(dir)) {
 		if (existsSync(join(dir, "package.json"))) return join(dir, "content");
@@ -83,12 +79,15 @@ export function docsLoader(sources: DocsSource[]): Loader {
 			for (const { dir, slug: slugPrefix } of resolved) {
 				for await (const absPath of walk(dir)) {
 					const id = computeId(absPath, dir, slugPrefix);
-					const raw = readFileSync(absPath, "utf-8");
+					const raw = await readFile(absPath, "utf-8");
 					const { data: frontmatter, content: body } = parseFrontmatter(raw);
-					const digest = createHash("sha256").update(raw).digest("hex").slice(0, 8);
+					const digest = ctx.generateDigest(raw);
 					const filePath = relative(siteRoot, absPath);
 					const data = await ctx.parseData({ id, data: frontmatter, filePath });
-					ctx.store.set({ id, data, body, filePath, digest });
+					const rendered = await ctx.renderMarkdown(body, {
+						fileURL: pathToFileURL(absPath),
+					});
+					ctx.store.set({ id, data, body, filePath, digest, rendered });
 					ctx.watcher?.add(absPath);
 				}
 			}

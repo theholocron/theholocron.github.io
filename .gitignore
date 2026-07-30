@@ -94,3 +94,10 @@ super-linter-output
 # environment variables
 .env
 .env.production
+
+# managed by holocron setup — skills
+/.agents/skills/
+/.claude/skills/git-safety
+/.claude/skills/pr-workflow
+/.claude/skills/commit-standards
+# end managed by holocron setup — skills

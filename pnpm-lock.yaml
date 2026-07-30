@@ -63,6 +63,9 @@ importers:
       '@theholocron/prettier-config':
         specifier: ^7.6.1
         version: 7.6.1(prettier@3.9.6)
+      '@theholocron/skills':
+        specifier: ^1.2.1
+        version: 1.2.1
       '@theholocron/tsconfig':
         specifier: ^7.6.1
         version: 7.6.1(typescript@5.9.3)
@@ -1388,6 +1391,10 @@ packages:
     engines: {node: '>=22.0.0'}
     peerDependencies:
       prettier: ^3
+
+  '@theholocron/skills@1.2.1':
+    resolution: {integrity: sha512-7UvrR6rDia8arkrO9qzMnNfjDBLv+oBA6Ur4jBiuu2RIZBD1GB34DUsO8MfaWsz7fge0jmQZfz6PCd3w9PgEZg==}
+    engines: {node: '>=22', pnpm: '>=10'}
 
   '@theholocron/tsconfig@7.6.1':
     resolution: {integrity: sha512-1Xm8ahQE0mYmLKYUiyr5bJQszruLyFVYKfMyrFQN7KgnqPT1iuZ/A0jKkKZ7pueJd+6Za7I/hprt4Cm9YSRnsA==}
@@ -5233,6 +5240,8 @@ snapshots:
   '@theholocron/prettier-config@7.6.1(prettier@3.9.6)':
     dependencies:
       prettier: 3.9.6
+
+  '@theholocron/skills@1.2.1': {}
 
   '@theholocron/tsconfig@7.6.1(typescript@5.9.3)':
     dependencies:

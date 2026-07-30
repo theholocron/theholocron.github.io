@@ -1,13 +1,12 @@
 import { fileURLToPath } from "node:url";
 
 import { docsSchema } from "@astrojs/starlight/schema";
+import { createDocsLoader } from "@theholocron/docs-theme/loader";
 import { defineCollection } from "astro:content";
-
-import { docsLoader } from "./loaders/docs-loader.ts";
 
 export const collections = {
 	docs: defineCollection({
-		loader: docsLoader([
+		loader: createDocsLoader([
 			{
 				dir: fileURLToPath(new URL("content/docs", import.meta.url)),
 				slug: "",

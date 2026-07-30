@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 
 import type { Loader, LoaderContext } from "astro/loaders";
 import matter from "gray-matter";
+import { load as loadYaml } from "js-yaml";
 
 export interface LocalDocsSource {
 	dir: string;
@@ -70,7 +71,12 @@ export function docsLoader(sources: DocsSource[]): Loader {
 				for await (const absPath of walk(dir)) {
 					const id = computeId(absPath, dir, slugPrefix);
 					const raw = readFileSync(absPath, "utf-8");
-					const { data: frontmatter, content: body } = matter(raw);
+					const { data: frontmatter, content: body } = matter(raw, {
+						language: "yaml",
+						engines: {
+							yaml: (src) => loadYaml(src) as Record<string, unknown>,
+						},
+					});
 					const digest = createHash("sha256").update(raw).digest("hex").slice(0, 8);
 					const filePath = relative(siteRoot, absPath);
 					const data = await ctx.parseData({ id, data: frontmatter, filePath });

@@ -35,6 +35,9 @@ importers:
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      js-yaml:
+        specifier: ^4.1.0
+        version: 4.3.0
       sharp:
         specifier: ^0.34.3
         version: 0.34.5
@@ -66,6 +69,9 @@ importers:
       '@theholocron/tsconfig':
         specifier: ^7.6.1
         version: 7.6.1(typescript@5.9.3)
+      '@types/js-yaml':
+        specifier: ^4.0.9
+        version: 4.0.9
       eslint:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.6.1)

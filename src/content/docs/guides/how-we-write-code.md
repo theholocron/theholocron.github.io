@@ -7,8 +7,8 @@ description: A set of rules for how we organize code.
 
 ```
 export function useBotChallenge(params: UseBotChallengeParams) {
-	const { skip = false, ...props } = params;
-	// ...
+  const { skip = false, ...props } = params;
+  // ...
 }
 ```
 
@@ -16,7 +16,7 @@ VS
 
 ```
 export function useBotChallenge({ skip = false, ...props }: UseBotChallengeParams) {
-	// ...
+  // ...
 }
 ```
 
@@ -24,10 +24,10 @@ The former because...it's easier to read a spread on a separate line. When `pret
 
 ```
 export function useBotChallenge({
-	skip = false,
-	...props
+  skip = false,
+  ...props
 }: UseBotChallengeParams) {
-	// ...
+  // ...
 }
 ```
 
@@ -41,10 +41,10 @@ Functions should be prefixed with REST-style verbs (e.g. get, update, create).
 
 Prefer writing [markup-only components](https://dustin.boston/engineering-logbook/2025-04-07-markup-only-components-at-netflix/). But still prefer writing in the following order when possible.
 
--   props
--   ref
--   state (`useState`, `jotai` atoms, etc.)
--   `useEffect`
--   event handlers
--   return `useMemo`
--   return component (early exits)
+- props
+- ref
+- state (`useState`, `jotai` atoms, etc.)
+- `useEffect`
+- event handlers
+- return `useMemo`
+- return component (early exits)

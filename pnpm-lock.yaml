@@ -24,8 +24,8 @@ importers:
         specifier: ^0.41.5
         version: 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
       '@theholocron/clients-docs':
-        specifier: ^1.5.0
-        version: 1.5.0
+        specifier: ^1.5.3
+        version: 1.5.3
       '@theholocron/docs-theme':
         specifier: ^1.0.9
         version: 1.0.9(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
@@ -1303,8 +1303,8 @@ packages:
     resolution: {integrity: sha512-5Zg5CZq4BEn/nG3UIT17CpiXCjpK7XZYdUCmGQ6qbgf02WDguJXuHY3o+N7wOuwHEJv1JAN2TX4mkJcbxAbXxQ==}
     hasBin: true
 
-  '@theholocron/clients-docs@1.5.0':
-    resolution: {integrity: sha512-tfHn1gxrmpQT3AhDD1r+CiBlEc5+SEsG61Qhkn7T8KPDKbg0jUjXFOSfJjLj4v2YSmBjdkRSfb8HpOSSH8fSyA==}
+  '@theholocron/clients-docs@1.5.3':
+    resolution: {integrity: sha512-F0sce1TNOVvsyDIw80ZVrIcsZCLthWpUEVwdUA1XkBV2ZvMjk0HkdpWT3GuV5gKu/R/avTw8OscRWAD8L72Vdg==}
     engines: {node: '>=22.0.0'}
 
   '@theholocron/commitlint-config@7.6.1':
@@ -1699,8 +1699,8 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
-  brace-expansion@1.1.17:
-    resolution: {integrity: sha512-w+aeW/mkgM4PyRMOJCgi3fOrTm5Q8QY1OSfn2TO2iuDj3ezIHqejmuxbjfPrqUkgqRew1iqkyAn0tr0ZwHD9+w==}
+  brace-expansion@1.1.18:
+    resolution: {integrity: sha512-Edep/X9fGqVNmzKBVsDYIOtD+z1tuezV70LBjdCst9Tqu76lsnvRiZ6oTic1n+/BIwX6QDGAO94PN4N2SADvtw==}
 
   brace-expansion@5.0.8:
     resolution: {integrity: sha512-JZyDyq3D4AUifKTPOB7DELf6XsB3WdPuNxCtob1vFXPsSXhdAiHBWJ/tJ8HAc9aH84BK+5JFZLNkJKx3G9kzQg==}
@@ -5190,7 +5190,7 @@ snapshots:
       - supports-color
       - vitest
 
-  '@theholocron/clients-docs@1.5.0': {}
+  '@theholocron/clients-docs@1.5.3': {}
 
   '@theholocron/commitlint-config@7.6.1(@commitlint/cli@19.8.1(@types/node@26.1.2)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)':
     dependencies:
@@ -5705,7 +5705,7 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  brace-expansion@1.1.17:
+  brace-expansion@1.1.18:
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
@@ -7587,7 +7587,7 @@ snapshots:
 
   minimatch@3.1.5:
     dependencies:
-      brace-expansion: 1.1.17
+      brace-expansion: 1.1.18
     optional: true
 
   minimist@1.2.8: {}

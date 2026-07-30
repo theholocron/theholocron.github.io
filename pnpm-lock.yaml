@@ -7,14 +7,14 @@ settings:
 catalogs:
   holocron:
     '@theholocron/cli':
-      specifier: ^3.3.14
-      version: 3.3.14
+      specifier: ^3.4.0
+      version: 3.4.0
     '@theholocron/holocron-config':
       specifier: ^7.6.1
       version: 7.6.1
     '@theholocron/holocron-plugin-github':
-      specifier: ^3.3.14
-      version: 3.3.14
+      specifier: ^3.4.0
+      version: 3.4.0
 
 importers:
 
@@ -44,7 +44,7 @@ importers:
         version: 0.9.10(prettier@3.9.6)(typescript@5.9.3)
       '@theholocron/cli':
         specifier: catalog:holocron
-        version: 3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
+        version: 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
       '@theholocron/commitlint-config':
         specifier: ^7.6.1
         version: 7.6.1(@commitlint/cli@19.8.1(@types/node@26.1.2)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)
@@ -53,10 +53,10 @@ importers:
         version: 7.6.1(@eslint/js@9.39.5)(eslint-plugin-react@7.37.5(eslint@10.8.0(jiti@2.6.1)))(eslint-plugin-simple-import-sort@14.0.0(eslint@10.8.0(jiti@2.6.1)))(eslint@10.8.0(jiti@2.6.1))(globals@17.8.0)(typescript-eslint@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@5.9.3))
       '@theholocron/holocron-config':
         specifier: catalog:holocron
-        version: 7.6.1(@theholocron/cli@3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))
+        version: 7.6.1(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))
       '@theholocron/holocron-plugin-github':
         specifier: catalog:holocron
-        version: 3.3.14(@theholocron/cli@3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.3.5)
+        version: 3.4.0(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.3.5)
       '@theholocron/lint-staged-config':
         specifier: ^7.6.1
         version: 7.6.1(husky@9.1.7)(lint-staged@16.4.0)(sort-package-json@4.0.0)
@@ -1299,8 +1299,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@theholocron/cli@3.3.14':
-    resolution: {integrity: sha512-5Zg5CZq4BEn/nG3UIT17CpiXCjpK7XZYdUCmGQ6qbgf02WDguJXuHY3o+N7wOuwHEJv1JAN2TX4mkJcbxAbXxQ==}
+  '@theholocron/cli@3.4.0':
+    resolution: {integrity: sha512-/lusysF8FN/qtLnurldqy6SSnQDw9gdjcvi8qGeKlOS4z2VK/qY1l32DE6pEp0krRz4iknPf6bxRh4W2pxjU7Q==}
     hasBin: true
 
   '@theholocron/clients-docs@1.5.3':
@@ -1360,10 +1360,10 @@ packages:
     peerDependencies:
       '@theholocron/cli': '>=2.0.0-alpha.1'
 
-  '@theholocron/holocron-plugin-github@3.3.14':
-    resolution: {integrity: sha512-yC/qVWEIPO/vGvigjNStkTSW60ZQdYmXnyagScKhUUgPvek0fteDLkYSKEr3pT7tTwhJyEUY+D3vyLlEqQHTpw==}
+  '@theholocron/holocron-plugin-github@3.4.0':
+    resolution: {integrity: sha512-cQwt+Kd2l9l1V6I8e7Eb5mCfOasF3lHc6yYex4EHCz+XMoEMleCCcxfEUYzSDQo1Zdfd0eqcuSbNvUwcpGHO3A==}
     peerDependencies:
-      '@theholocron/cli': 3.3.14
+      '@theholocron/cli': 3.4.0
       '@theholocron/github-client': ^1.3.5
 
   '@theholocron/http-client@1.3.5':
@@ -5213,7 +5213,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@theholocron/cli@3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))':
+  '@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))':
     dependencies:
       '@napi-rs/keyring': 1.3.0
       '@sentry/node': 10.69.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
@@ -5258,13 +5258,13 @@ snapshots:
     transitivePeerDependencies:
       - vitest
 
-  '@theholocron/holocron-config@7.6.1(@theholocron/cli@3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))':
+  '@theholocron/holocron-config@7.6.1(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))':
     dependencies:
-      '@theholocron/cli': 3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
+      '@theholocron/cli': 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
 
-  '@theholocron/holocron-plugin-github@3.3.14(@theholocron/cli@3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.3.5)':
+  '@theholocron/holocron-plugin-github@3.4.0(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.3.5)':
     dependencies:
-      '@theholocron/cli': 3.3.14(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
+      '@theholocron/cli': 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
       '@theholocron/github-client': 1.3.5
       libsodium-wrappers: 0.8.4
 

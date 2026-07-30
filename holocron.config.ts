@@ -5,6 +5,7 @@ import { node } from "@theholocron/holocron-config";
 const { repo, providers } = node();
 export default defineConfig({
 	description: "The Holocron Archives.",
+	homepage: "https://docs.theholocron.dev/",
 	repo: {
 		...repo,
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],

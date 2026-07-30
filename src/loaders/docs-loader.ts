@@ -74,8 +74,7 @@ export function docsLoader(sources: DocsSource[]): Loader {
 					const { data: frontmatter, content: body } = matter(raw, {
 						language: "yaml",
 						engines: {
-							yaml: (src) =>
-								loadYaml(src, { schema: FAILSAFE_SCHEMA }) as Record<string, unknown>,
+							yaml: (src) => loadYaml(src, { schema: FAILSAFE_SCHEMA }) as Record<string, unknown>,
 						},
 					});
 					const digest = createHash("sha256").update(raw).digest("hex").slice(0, 8);

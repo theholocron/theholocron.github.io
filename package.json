@@ -24,7 +24,6 @@
     "@theholocron/clients-docs": "^1.5.0",
     "@theholocron/docs-theme": "^1.0.9",
     "astro": "^7.1.5",
-    "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
     "sharp": "^0.34.3"
   },

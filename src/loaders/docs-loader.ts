@@ -6,7 +6,6 @@ import { dirname, extname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type { Loader, LoaderContext } from "astro/loaders";
-import matter from "gray-matter";
 import { JSON_SCHEMA, load as loadYaml } from "js-yaml";
 
 export interface LocalDocsSource {
@@ -42,6 +41,20 @@ function computeId(filePath: string, baseDir: string, slugPrefix: string): strin
 	return slugPrefix || "index";
 }
 
+/** Parse YAML frontmatter without gray-matter to avoid code-execution taint paths. */
+function parseFrontmatter(raw: string): { data: Record<string, unknown>; content: string } {
+	const match = /^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*\r?\n?([\s\S]*)$/.exec(raw);
+	if (!match) return { data: {}, content: raw };
+	const yamlStr = match[1];
+	const content = match[2];
+	const parsed = loadYaml(yamlStr, { schema: JSON_SCHEMA });
+	const data =
+		parsed !== null && typeof parsed === "object" && !Array.isArray(parsed)
+			? (parsed as Record<string, unknown>)
+			: {};
+	return { data, content };
+}
+
 function resolvePackageContentDir(packageName: string, root: URL): string {
 	const req = createRequire(root);
 	const main = req.resolve(packageName);
@@ -71,12 +84,7 @@ export function docsLoader(sources: DocsSource[]): Loader {
 				for await (const absPath of walk(dir)) {
 					const id = computeId(absPath, dir, slugPrefix);
 					const raw = readFileSync(absPath, "utf-8");
-					const { data: frontmatter, content: body } = matter(raw, {
-						language: "yaml",
-						engines: {
-							yaml: (src) => loadYaml(src, { schema: JSON_SCHEMA }) as Record<string, unknown>,
-						},
-					});
+					const { data: frontmatter, content: body } = parseFrontmatter(raw);
 					const digest = createHash("sha256").update(raw).digest("hex").slice(0, 8);
 					const filePath = relative(siteRoot, absPath);
 					const data = await ctx.parseData({ id, data: frontmatter, filePath });

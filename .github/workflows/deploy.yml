@@ -1,3 +1,6 @@
+# Hand-maintained — this repo IS the GitHub Pages site. The deploy-docs
+# reusable workflow targets monorepos with <name>-site packages and uploads
+# docs/dist, which does not match this flat Astro site's structure.
 name: Deploy
 
 on: # yamllint disable-line rule:truthy

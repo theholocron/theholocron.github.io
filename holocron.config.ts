@@ -11,7 +11,7 @@ export default defineConfig({
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
 		topics: ["astro", "docs", "starlight"],
 	},
-	workflows: ["lint"],
+	workflows: ["lint", "review", "stale", "greetings", "typecheck", "audit", "dependencies", "bookkeeping"],
 	providers: {
 		...providers,
 		secrets: "github",

@@ -26,9 +26,24 @@ importers:
       '@theholocron/clients-docs':
         specifier: ^1.5.3
         version: 1.5.3
+      '@theholocron/configs-docs':
+        specifier: ^7.7.0
+        version: 7.7.0
       '@theholocron/docs-theme':
         specifier: ^1.1.0
         version: 1.1.0(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
+      '@theholocron/holocron-docs':
+        specifier: ^3.5.0
+        version: 3.5.0
+      '@theholocron/skills-docs':
+        specifier: ^1.3.1
+        version: 1.3.1
+      '@theholocron/themes-docs':
+        specifier: ^1.0.9
+        version: 1.0.9
+      '@theholocron/utils-docs':
+        specifier: ^1.1.0
+        version: 1.1.0
       astro:
         specifier: ^7.1.5
         version: 7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0)
@@ -1314,6 +1329,10 @@ packages:
       '@commitlint/cli': ^21
       '@commitlint/config-conventional': ^21
 
+  '@theholocron/configs-docs@7.7.0':
+    resolution: {integrity: sha512-jmsjuJWsTg2SS1c3+cNwG9GpOjIK6o6+Bv2i+MOGtSYyz57r4B3PwJ+WnF+r3sVv/PxMgZYULv18oNBavX3b6g==}
+    engines: {node: '>=22.0.0'}
+
   '@theholocron/docs-theme@1.1.0':
     resolution: {integrity: sha512-UI9NvBg5L5v3HRQ6kVmT4Pjy8SQ2Du+8b1AslERF/fTtngxapl68NEPCcBc+YwVsg8xB87I6t3UMTdDaqAiAzQ==}
     engines: {node: '>=22.0.0'}
@@ -1360,6 +1379,10 @@ packages:
     peerDependencies:
       '@theholocron/cli': '>=2.0.0-alpha.1'
 
+  '@theholocron/holocron-docs@3.5.0':
+    resolution: {integrity: sha512-wRRpX9LZRg8NdIz7Neme/BqXsaFwcBt/fPNtiTjaPyxmKk/lbaONadt7URfwYzkd9j7nfLAk/mh8bvzFLnlAhw==}
+    engines: {node: '>=22.0.0'}
+
   '@theholocron/holocron-plugin-github@3.4.0':
     resolution: {integrity: sha512-cQwt+Kd2l9l1V6I8e7Eb5mCfOasF3lHc6yYex4EHCz+XMoEMleCCcxfEUYzSDQo1Zdfd0eqcuSbNvUwcpGHO3A==}
     peerDependencies:
@@ -1392,15 +1415,27 @@ packages:
     peerDependencies:
       prettier: ^3
 
+  '@theholocron/skills-docs@1.3.1':
+    resolution: {integrity: sha512-YUSZsLaW1rl1PxCwjJWgUThtd2lOQrv1xxx2QtrvM0qKZ9sLmKBkmNjKsnecMXn5JbEeyjixLhlKwt6Nw/IfGg==}
+    engines: {node: '>=22.0.0'}
+
   '@theholocron/skills@1.2.1':
     resolution: {integrity: sha512-7UvrR6rDia8arkrO9qzMnNfjDBLv+oBA6Ur4jBiuu2RIZBD1GB34DUsO8MfaWsz7fge0jmQZfz6PCd3w9PgEZg==}
     engines: {node: '>=22', pnpm: '>=10'}
+
+  '@theholocron/themes-docs@1.0.9':
+    resolution: {integrity: sha512-m01/o1OOQZ6XFIo+KsexEmn5SnJg9gNsrub1DYkBnBNvgDIoTa6d9cXmabLJqTt/woSKvPkajQkBnyxvLO4PIQ==}
+    engines: {node: '>=22.0.0'}
 
   '@theholocron/tsconfig@7.6.1':
     resolution: {integrity: sha512-1Xm8ahQE0mYmLKYUiyr5bJQszruLyFVYKfMyrFQN7KgnqPT1iuZ/A0jKkKZ7pueJd+6Za7I/hprt4Cm9YSRnsA==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       typescript: ^5
+
+  '@theholocron/utils-docs@1.1.0':
+    resolution: {integrity: sha512-PhUMUIjyjEd8mRPq/YmHwLwBBb4IAwBH45SbTITTUHV+bPDATC/VvW4QAtAlTT62HcF/bmjE0x5MmvUn1zu9Sg==}
+    engines: {node: '>=22.0.0'}
 
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
@@ -5236,6 +5271,8 @@ snapshots:
       '@commitlint/cli': 19.8.1(@types/node@26.1.2)(typescript@5.9.3)
       '@commitlint/config-conventional': 19.8.1
 
+  '@theholocron/configs-docs@7.7.0': {}
+
   '@theholocron/docs-theme@1.1.0(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))':
     dependencies:
       '@astrojs/starlight': 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
@@ -5262,6 +5299,8 @@ snapshots:
     dependencies:
       '@theholocron/cli': 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
 
+  '@theholocron/holocron-docs@3.5.0': {}
+
   '@theholocron/holocron-plugin-github@3.4.0(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.3.5)':
     dependencies:
       '@theholocron/cli': 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
@@ -5281,11 +5320,17 @@ snapshots:
     dependencies:
       prettier: 3.9.6
 
+  '@theholocron/skills-docs@1.3.1': {}
+
   '@theholocron/skills@1.2.1': {}
+
+  '@theholocron/themes-docs@1.0.9': {}
 
   '@theholocron/tsconfig@7.6.1(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
+
+  '@theholocron/utils-docs@1.1.0': {}
 
   '@tybys/wasm-util@0.10.3':
     dependencies:

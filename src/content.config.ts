@@ -15,6 +15,26 @@ export const collections = {
 				package: "@theholocron/clients-docs",
 				slug: "projects/clients",
 			},
+			{
+				package: "@theholocron/configs-docs",
+				slug: "projects/configs",
+			},
+			{
+				package: "@theholocron/holocron-docs",
+				slug: "projects/holocron",
+			},
+			{
+				package: "@theholocron/skills-docs",
+				slug: "projects/skills",
+			},
+			{
+				package: "@theholocron/themes-docs",
+				slug: "projects/themes",
+			},
+			{
+				package: "@theholocron/utils-docs",
+				slug: "projects/utils",
+			},
 		]),
 		schema: docsSchema(),
 	}),

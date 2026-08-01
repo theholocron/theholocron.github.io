@@ -31,7 +31,6 @@
     "@theholocron/themes-docs": "^1.0.9",
     "@theholocron/utils-docs": "^1.1.0",
     "astro": "^7.1.5",
-    "js-yaml": "^5.2.2",
     "sharp": "^0.35.3"
   },
   "devDependencies": {
@@ -45,7 +44,6 @@
     "@theholocron/prettier-config": "^7.6.1",
     "@theholocron/skills": "^1.2.1",
     "@theholocron/tsconfig": "^7.6.1",
-    "@types/js-yaml": "^4.0.9",
     "eslint": "^10.8.0",
     "eslint-plugin-simple-import-sort": "^14.0.0",
     "globals": "^17.8.0",

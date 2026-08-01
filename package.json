@@ -32,7 +32,7 @@
     "@theholocron/utils-docs": "^1.1.0",
     "astro": "^7.1.5",
     "js-yaml": "^4.1.0",
-    "sharp": "^0.34.3"
+    "sharp": "^0.35.3"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

@@ -17,8 +17,10 @@
     "dev": "astro dev",
     "prepare": "husky",
     "preview": "astro preview",
-    "start": "astro dev"
+    "start": "astro dev",
+    "typecheck": "astro check"
   },
+  "prettier": "@theholocron/prettier-config",
   "dependencies": {
     "@astrojs/starlight": "^0.41.5",
     "@theholocron/clients-docs": "^1.5.3",

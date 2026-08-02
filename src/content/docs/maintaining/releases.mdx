@@ -15,9 +15,9 @@ For reference, we use [SemVer](https://semver.org/) for its versioning, providin
 
 Given a version number **MAJOR.MINOR.PATCH**, increment the:
 
-* **MAJOR** version when you make incompatible API changes.
-* **MINOR** version when you add functionality in a backward-compatible manner.
-* **PATCH** version when you make backward-compatible bug fixes.
+- **MAJOR** version when you make incompatible API changes.
+- **MINOR** version when you add functionality in a backward-compatible manner.
+- **PATCH** version when you make backward-compatible bug fixes.
 
 Additional labels for pre-release and build metadata are available as extensions to the **MAJOR.MINOR.PATCH** format.
 
@@ -27,14 +27,14 @@ After all features from the `next-release` label have been merged into the `main
 
 Given we follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), versioning is based on the following rules:
 
-* if there is a `feat`, bump the `minor`
-* if there is only `fix` and `chore`, bump the `patch`
-* if there is only `chore`, do not bump the version
+- if there is a `feat`, bump the `minor`
+- if there is only `fix` and `chore`, bump the `patch`
+- if there is only `chore`, do not bump the version
 
-If you want to verify that the release will match the above rules then run a dry run of the release script (`npm run release -- --dry-run`) and verify that the output of the command will match the expectations of the version you expect.
+If you want to verify that the release will match the above rules then run a dry run of the release script (`pnpm release -- --dry-run`) and verify that the output of the command will match the expectations of the version you expect.
 
 ## Release a Version
 
-Once a version has been determined, run `npm run release`. This will update the `version` key within the `package.json` and the `package-lock.json`, as well as generate the CHANGELOG, commit using our conventions and create the tag. **DO NOT USE the `npm version` command!**
+Once a version has been determined, run `pnpm release`. This will update the `version` key within the `package.json` and the `pnpm-lock.yaml`, as well as generate the CHANGELOG, commit using our conventions and create the tag. **DO NOT USE the `pnpm version` command!**
 
 After running the script, the next step is to push to the remote using the following command: `git push --follow-tags origin main`

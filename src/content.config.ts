@@ -35,6 +35,10 @@ export const collections = {
 				package: "@theholocron/utils-docs",
 				slug: "projects/utils",
 			},
+			{
+				package: "@theholocron/node-template-site",
+				slug: "projects/templates/node",
+			},
 		]),
 		schema: docsSchema(),
 	}),

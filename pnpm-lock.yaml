@@ -35,6 +35,9 @@ importers:
       '@theholocron/holocron-docs':
         specifier: ^3.5.0
         version: 3.5.0
+      '@theholocron/node-template-site':
+        specifier: 0.0.0
+        version: 0.0.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(typescript@5.9.3)(yaml@2.9.0)
       '@theholocron/skills-docs':
         specifier: ^1.3.1
         version: 1.3.1
@@ -1343,6 +1346,13 @@ packages:
       '@astrojs/starlight': '>=0.30.0'
       astro: '>=5.0.0'
 
+  '@theholocron/docs-theme@1.3.1':
+    resolution: {integrity: sha512-2szKoJgA0sDkw8WSN6ipmiCR0eyi5eSx1j70N9hlhWw908mbQfjnU+qRZEMNGbQ/fKcPFfmlkKnw1Un5o6/HAw==}
+    engines: {node: '>=22.0.0'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.30.0'
+      astro: '>=5.0.0'
+
   '@theholocron/eslint-config@7.6.1':
     resolution: {integrity: sha512-QHpJPNLjfwI+fo6LjQyeBytBTWDzu/FwY0fisS3GnQwqKwzTTRHHEceWhNCHPaHDfp4a2KC5s13iKDbIq/A5tg==}
     engines: {node: '>=22.0.0'}
@@ -1411,6 +1421,10 @@ packages:
     peerDependenciesMeta:
       sort-package-json:
         optional: true
+
+  '@theholocron/node-template-site@0.0.0':
+    resolution: {integrity: sha512-cd1OYamPSG7/dWtX6ECekErnCmdhfQOHQk2Fs11O1zDfRA5tza8sKgVJ00GeELGEzcRBV2OeJAWWs+ag5+hAUQ==}
+    engines: {node: '>=22.0.0'}
 
   '@theholocron/prettier-config@7.6.1':
     resolution: {integrity: sha512-KBUcFQOQCPJ5txBNcaF0dHWNjeBY36bNAZ9MnjD9g9Z9vQL8cFd7VbuBCc7np93l4XwcQ5iya+58MmArIi9rNg==}
@@ -5301,6 +5315,12 @@ snapshots:
       astro: 7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0)
       gray-matter: 4.0.3
 
+  '@theholocron/docs-theme@1.3.1(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))':
+    dependencies:
+      '@astrojs/starlight': 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
+      astro: 7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0)
+      gray-matter: 4.0.3
+
   '@theholocron/eslint-config@7.6.1(@eslint/js@9.39.5)(eslint-plugin-react@7.37.5(eslint@10.8.0(jiti@2.6.1)))(eslint-plugin-simple-import-sort@14.0.0(eslint@10.8.0(jiti@2.6.1)))(eslint@10.8.0(jiti@2.6.1))(globals@17.8.0)(typescript-eslint@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@5.9.3))':
     dependencies:
       '@eslint/js': 9.39.5
@@ -5337,6 +5357,49 @@ snapshots:
       lint-staged: 16.4.0
     optionalDependencies:
       sort-package-json: 4.0.0
+
+  '@theholocron/node-template-site@0.0.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(typescript@5.9.3)(yaml@2.9.0)':
+    dependencies:
+      '@astrojs/starlight': 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
+      '@theholocron/docs-theme': 1.3.1(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
+      astro: 7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0)
+    transitivePeerDependencies:
+      - '@astrojs/markdown-remark'
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@deno/kv'
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+      - '@netlify/blobs'
+      - '@planetscale/database'
+      - '@types/node'
+      - '@upstash/redis'
+      - '@vercel/blob'
+      - '@vercel/functions'
+      - '@vercel/kv'
+      - '@vitejs/devtools'
+      - aws4fetch
+      - db0
+      - idb-keyval
+      - ioredis
+      - jiti
+      - less
+      - rollup
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - tsx
+      - typescript
+      - uploadthing
+      - yaml
 
   '@theholocron/prettier-config@7.6.1(prettier@3.9.6)':
     dependencies:

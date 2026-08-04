@@ -21,7 +21,19 @@ export default defineConfig({
 					items: [
 						// Static overview pages
 						"projects/configuration",
-						"projects/templates",
+						{
+							label: "Templates",
+							items: [
+								{ label: "Overview", link: "projects/templates" },
+								{
+									label: "Node",
+									items: [
+										{ label: "Overview", link: "projects/templates/node" },
+										{ autogenerate: { directory: "projects/templates/node" } },
+									],
+								},
+							],
+						},
 						// Per-package groups: Overview is explicit because the index
 						// pages carry sidebar: { hidden: true } in their frontmatter
 						// (they hide themselves on their own repo's site). Sub-pages

@@ -7,34 +7,34 @@ settings:
 catalogs:
   holocron:
     '@theholocron/cli':
-      specifier: ^3.4.0
-      version: 3.4.0
+      specifier: ^3.5.2
+      version: 3.8.3
     '@theholocron/holocron-config':
-      specifier: ^7.6.1
-      version: 7.6.1
+      specifier: ^7.7.0
+      version: 7.13.1
     '@theholocron/holocron-plugin-github':
-      specifier: ^3.4.0
-      version: 3.4.0
+      specifier: ^3.5.2
+      version: 3.5.2
 
 importers:
 
   .:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.41.5
-        version: 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
+        specifier: ^0.41.6
+        version: 0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
       '@theholocron/clients-docs':
-        specifier: ^1.5.3
-        version: 1.5.3
+        specifier: ^1.5.5
+        version: 1.5.5
       '@theholocron/configs-docs':
         specifier: ^7.7.0
         version: 7.7.0
       '@theholocron/docs-theme':
         specifier: ^1.2.2
-        version: 1.2.2(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
+        version: 1.2.2(@astrojs/starlight@0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
       '@theholocron/holocron-docs':
-        specifier: ^3.5.0
-        version: 3.5.0
+        specifier: ^3.5.2
+        version: 3.5.2
       '@theholocron/node-template-site':
         specifier: 0.0.0
         version: 0.0.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(typescript@5.9.3)(yaml@2.9.0)
@@ -59,31 +59,31 @@ importers:
         version: 0.9.10(prettier@3.9.6)(typescript@5.9.3)
       '@theholocron/cli':
         specifier: catalog:holocron
-        version: 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
+        version: 3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2)
       '@theholocron/commitlint-config':
-        specifier: ^7.6.1
-        version: 7.6.1(@commitlint/cli@19.8.1(@types/node@26.1.2)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)
+        specifier: ^7.7.0
+        version: 7.7.0(@commitlint/cli@19.8.1(@types/node@26.1.2)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)
       '@theholocron/eslint-config':
-        specifier: ^7.6.1
-        version: 7.6.1(@eslint/js@9.39.5)(eslint-plugin-react@7.37.5(eslint@10.8.0(jiti@2.6.1)))(eslint-plugin-simple-import-sort@14.0.0(eslint@10.8.0(jiti@2.6.1)))(eslint@10.8.0(jiti@2.6.1))(globals@17.8.0)(typescript-eslint@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@5.9.3))
+        specifier: ^7.7.0
+        version: 7.7.0(@eslint/js@9.39.5)(eslint-plugin-react@7.37.5(eslint@10.8.0(jiti@2.6.1)))(eslint-plugin-simple-import-sort@14.0.0(eslint@10.8.0(jiti@2.6.1)))(eslint@10.8.0(jiti@2.6.1))(globals@17.8.0)(typescript-eslint@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@5.9.3))
       '@theholocron/holocron-config':
         specifier: catalog:holocron
-        version: 7.6.1(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))
+        version: 7.13.1(@theholocron/cli@3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2))
       '@theholocron/holocron-plugin-github':
         specifier: catalog:holocron
-        version: 3.4.0(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.3.5)
+        version: 3.5.2(@theholocron/cli@3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2))(@theholocron/github-client@1.6.1)
       '@theholocron/lint-staged-config':
-        specifier: ^7.6.1
-        version: 7.6.1(husky@9.1.7)(lint-staged@16.4.0)(sort-package-json@4.0.0)
+        specifier: ^7.7.0
+        version: 7.7.0(husky@9.1.7)(lint-staged@16.4.0)(sort-package-json@4.0.0)
       '@theholocron/prettier-config':
-        specifier: ^7.6.1
-        version: 7.6.1(prettier@3.9.6)
+        specifier: ^7.7.0
+        version: 7.7.0(prettier@3.9.6)
       '@theholocron/skills':
-        specifier: ^1.2.1
-        version: 1.2.1
+        specifier: ^1.3.1
+        version: 1.3.1
       '@theholocron/tsconfig':
-        specifier: ^7.6.1
-        version: 7.6.1(typescript@5.9.3)
+        specifier: ^7.7.0
+        version: 7.7.0(typescript@5.9.3)
       eslint:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.6.1)
@@ -231,8 +231,8 @@ packages:
   '@astrojs/sitemap@3.7.3':
     resolution: {integrity: sha512-f8euLVsyeAmAkSm/1M2Kb8sL8byQmfgbvBNaHFItCheTj/IpiJYSEWVcqDHZ/yEHxiS7+w87mQkzwZaPHmk5GA==}
 
-  '@astrojs/starlight@0.41.5':
-    resolution: {integrity: sha512-BNkyysByeqk9cXGNnd1fC1+kc9rrllo1Df/XD34wQg/I5HUX1Bc+F91aTktg17sapQs+mafzWSRgmURRyCNLKA==}
+  '@astrojs/starlight@0.41.6':
+    resolution: {integrity: sha512-Dt0/wY2JbFGUpxMgclw1j2Iqks2GG0LHYKgP7TfBXsFrs4LIbKvQ596lzyhXLz6nFcnPdIB9ZRFyDJeuVcx3Ug==}
     peerDependencies:
       '@astrojs/markdown-remark': ^7.2.0
       astro: ^7.0.2
@@ -819,6 +819,140 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@inquirer/ansi@2.0.7':
+    resolution: {integrity: sha512-3eTuUO1vH2cZm2ZKHeQxnOqlTi9EfZDGgIe3BL3I4u+rJHocr9Fz86M4fjYABPvFnQG/gGK551HqDiIcETwU6Q==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+
+  '@inquirer/checkbox@5.2.1':
+    resolution: {integrity: sha512-b6xmA/VlTe0ZgDQHDui+Nav470u7u49nRd8/iuhOcQPO9Ch7lGuogydhi2VOmNlZ+zXcM8IcPuNSwQcdJaF/kw==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/confirm@6.1.1':
+    resolution: {integrity: sha512-eb8DBZcz/2qHWQda4rk2JiQk5h9QV/cVHi1yjt0f69WFZMRFn0sJTye3EAP8icut8UDMjQPsaH5KbcOogefrFQ==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/core@11.2.1':
+    resolution: {integrity: sha512-Qd6GJT1yVyrZZCfN8W2qKF5ApmqryXRhRKCuip8h01x2w/esJQ2XIYc6f9abMIHgKQdBfFTSOdbHRLAhuM09UA==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/editor@5.2.2':
+    resolution: {integrity: sha512-ZRVd/oD+sYsUd5zVm0NflqEzlqfYCyHNsqkHl2oWXEUHs12tCbcSFi+wVFEvD8+LGRaMUsVrE7qeo6lSG/S1Vg==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/expand@5.1.1':
+    resolution: {integrity: sha512-YmQpenjbFSHAK3sOd44puHh3V1KXXr+JiNpUztoSQ4drLh2rTVzTap/YtlAVu/5xavifIlBfNEzJ/neZJ1a/1g==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/external-editor@3.0.3':
+    resolution: {integrity: sha512-6thf5I8q7lZwzGLAxPaaGEREEkZ3nyePPDQ1oyobblxmEE8mqTLguScP7pDjUTAibiyb4hfXl+qjUEJ+di/aNA==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/figures@2.0.7':
+    resolution: {integrity: sha512-aJ8TBPOGB6f/2qziPfElISTCEd5XOYTFckA2SGjhNmiKzfK/u4ot3v0DUzGVdUnKjN10EqnnEPck36BkyfLnJw==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+
+  '@inquirer/input@5.1.2':
+    resolution: {integrity: sha512-9K/DDBSQpOyZSkt6sOVP9Vo0TR7atX2kuILsUu0x3wVcVbe97lJwIJKMLdMw25tDYuXl/qp6erT0Xs1rfmcfZg==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/number@4.1.1':
+    resolution: {integrity: sha512-XF4IXAbPnGPgw0wsbC/i2tPcyfdZgDpUlhsqU0SfT4IRIGWha6Xm9VRgN5yYxJq+jnyXlfXI/nQ3ulfk0iEICA==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/password@5.1.1':
+    resolution: {integrity: sha512-3XBfF7DAsp5qeDsvN5Rd1HmbNokVvEQoUM0QLrRcybC9nX96w3Pbmu7qUsb3IT3J3jBvs2+mTXaKHOUsgHMLzg==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/prompts@8.5.2':
+    resolution: {integrity: sha512-IYR/3C/paEVVQYQvdDlFZVjRCJVYHHON0XXMH91KO9GSxs0TdKYWlUdvfQl2EfAHDxUaN3IBffkE/BDTh5nJ6g==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/rawlist@5.3.1':
+    resolution: {integrity: sha512-QqdTqQddL3qPX/PPrjobpsO25NZ4dWXgTLenrR445L2ptLEYE6Z+PD5c5CNDJNx4ugRgELAIpSIJxZaO2jJ2Og==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/search@4.2.1':
+    resolution: {integrity: sha512-xJj8QWKRSrfKoBIITLZK61dD3zwo0Rz11fgDImku30/Oe81zMdIdGgrLY2h6RkJ+KZ/GhNYIRMKnH/62qBTA5g==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/select@5.2.1':
+    resolution: {integrity: sha512-FlDndEUww8m7BfukO2nJa25vhD+H5jxxCv4oGioKqzyWz3nPHhhw4LKdYRSlXuAx7DsdWia7iyaBPKKS95Evfw==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/type@4.0.7':
+    resolution: {integrity: sha512-t28inv14nMQ1PhKpsJPY+kEs/c00qzeCOS2gTNRyTjG5d6qsVA2fItxW4hkvGZ5lvanGLdtCzVIx5dwdRpN1+g==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
@@ -906,12 +1040,12 @@ packages:
     resolution: {integrity: sha512-WrOw/bcXm0f9qHkumlT1QlArXSTWqaY9sunsDpOk+yCCorCKMxvWT/a3xko4EYHVdeZoh00yI2TydXn6eyICDA==}
     engines: {node: '>= 10'}
 
-  '@napi-rs/wasm-runtime@1.2.0':
-    resolution: {integrity: sha512-kDoONqMa+VnZ4vvvu/ZUurpJ4gkZU57e7g69qpNgWhYcZFPUHZM2CEMKm+cG6ufDVALbjMvfmMjFVqaK7uEMnA==}
+  '@napi-rs/wasm-runtime@1.2.2':
+    resolution: {integrity: sha512-JfB4kuJQjaoHuCTseIINHtHWeJnvgEcxjwA5t/Y00ZgaOO1Crz3fjT/p8kT28zA/Caz7oiUMn3d6H2yOVCVwuw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=23.5.0}
     peerDependencies:
-      '@emnapi/core': ^2.0.0-alpha.3
-      '@emnapi/runtime': ^2.0.0-alpha.3
+      '@emnapi/core': ^1.7.1 || ^2.0.0-alpha.3
+      '@emnapi/runtime': ^1.7.1 || ^2.0.0-alpha.3
 
   '@opentelemetry/api-logs@0.220.0':
     resolution: {integrity: sha512-CmVa4ImJ+ynfrPMNaAXHET6Bhb44SwzmfyVJFq9ni2jgXJR/l7C6gfVFddNmHP+ZOkP9cf4f9DBe68qVLTHc9w==}
@@ -1293,43 +1427,71 @@ packages:
     resolution: {integrity: sha512-ANMDxuaPsNMdDC1m4vfvhlDmJweMwkE5XitTwrq2rWHx5jM+dlm4MmHt2PP6t0uejfR77SuhrhJ0zEijIF/uhA==}
     engines: {node: '>=20'}
 
+  '@shikijs/core@4.4.1':
+    resolution: {integrity: sha512-VeR2CY6Nn9/WbisoYLOQZ7HZOnwTrpBuOw4wExjqLnBCi62BNWynBUO6K2uPIASPFJwAv7cX1fUu+LrPlSstcw==}
+    engines: {node: '>=20'}
+
   '@shikijs/engine-javascript@4.3.1':
     resolution: {integrity: sha512-JBItcnPuYq7jVJdZo/vMj94r+szT7XEjHFX+mvFDGSEIbVAXAGyHAHzhbWzpGOwYidCZrErJLLgn2PVeiokHnQ==}
+    engines: {node: '>=20'}
+
+  '@shikijs/engine-javascript@4.4.1':
+    resolution: {integrity: sha512-6U4lJBh8LTvIkEVqRHv/rr3ruwtO6IweFQt1ME1ntHJMGHS+6N86vfYGO1o8c/DtOCTia2lfhdQBtBrps1sDfQ==}
     engines: {node: '>=20'}
 
   '@shikijs/engine-oniguruma@4.3.1':
     resolution: {integrity: sha512-OXyNMzg0pews+msMj4cHeqT4xiYKKvbnn6VbdAXxfoFl3SSx4fJTc8FadECuc5/H9p3BzhNAoAUXKwAu9rWYhg==}
     engines: {node: '>=20'}
 
+  '@shikijs/engine-oniguruma@4.4.1':
+    resolution: {integrity: sha512-p23RugMKss0r5DAtRJW1yAXUDl60JvhQYV20yuxei//26JyDSJefV3umyWzzwep2weblMnJGDYahuti6XkcMgA==}
+    engines: {node: '>=20'}
+
   '@shikijs/langs@4.3.1':
     resolution: {integrity: sha512-m0l9nsDqgBHvbZbk7A0/kXz/impK3uB/c6rAn6Gpg/uPtdZRQ+alsN/17MU5thb68XTj/4DxkZAotrM0GGSpDQ==}
+    engines: {node: '>=20'}
+
+  '@shikijs/langs@4.4.1':
+    resolution: {integrity: sha512-xb2kCMloBCIraIy2fS5MW0t/BxVY3q2nDyQKBoeSeq6KNrQbShHetCFlw2n35fGIJ6t3+hXDLQogP5ir9O9bvA==}
     engines: {node: '>=20'}
 
   '@shikijs/primitive@4.3.1':
     resolution: {integrity: sha512-CXQRQOYy1leqQ8ceTeJdmXv/bsUY++6QyLpXJ94LZAAYj5X2SKRdc5ipguv4NPyGVKItB2PPwUpRNe0Sjh5S1A==}
     engines: {node: '>=20'}
 
+  '@shikijs/primitive@4.4.1':
+    resolution: {integrity: sha512-ko2OfDoG89YuQ7xL5LtcQiWKb7NIv1Ephb7g48TVU198OzAMLC8lXVEwaJGHK4sUMYrfAGJDqYmNLOLiW/Kz8w==}
+    engines: {node: '>=20'}
+
   '@shikijs/themes@4.3.1':
     resolution: {integrity: sha512-dgpoJ4WqNi2yTmizQHBJ5zcX6j2lE6icN/0yt4l1kkf16jrY/pwPLoTb1ETsWMz0OBLf9ZNvwmxft+cH+N9qSA==}
+    engines: {node: '>=20'}
+
+  '@shikijs/themes@4.4.1':
+    resolution: {integrity: sha512-wudOaoFro+/Zl9gQv2W1Ur5XlVduqvTuYLI483Xi0wgc1A+cy1hfB2r6ac6ufBgF+ID7KJEW7L41MHrzQ4wH+w==}
     engines: {node: '>=20'}
 
   '@shikijs/types@4.3.1':
     resolution: {integrity: sha512-CHFxE0jztBIZRHH6gxXE7DXUCFXjReEGxZ/j0rfSLGKZuwp2xBYycEP14875DSa9KLL/6700oxIq6oO6ef9K2g==}
     engines: {node: '>=20'}
 
+  '@shikijs/types@4.4.1':
+    resolution: {integrity: sha512-GOwCLQDHM5EjGUWNPrhzJbr6JP8V/Dx/CDVkWvbZ1Avw5JFnNUckrgbLmE07qtg4WlW7Q7QFndhjIkeU9XMPvw==}
+    engines: {node: '>=20'}
+
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@theholocron/cli@3.4.0':
-    resolution: {integrity: sha512-/lusysF8FN/qtLnurldqy6SSnQDw9gdjcvi8qGeKlOS4z2VK/qY1l32DE6pEp0krRz4iknPf6bxRh4W2pxjU7Q==}
+  '@theholocron/cli@3.8.3':
+    resolution: {integrity: sha512-W+bYpVHLQZJfnKB1Z6bEY7xiaCMWv4AirxRAznE0nibQ5B6LnOgLcl5+E+Yyn5T0D6l+5x+tXmPwhuwk0Yj1wQ==}
     hasBin: true
 
-  '@theholocron/clients-docs@1.5.3':
-    resolution: {integrity: sha512-F0sce1TNOVvsyDIw80ZVrIcsZCLthWpUEVwdUA1XkBV2ZvMjk0HkdpWT3GuV5gKu/R/avTw8OscRWAD8L72Vdg==}
+  '@theholocron/clients-docs@1.5.5':
+    resolution: {integrity: sha512-Umbaju65sZXqTMIkgDm1eLdvoF+ICWUuAilSdDYKSQfstADUK2ornWOPe023WPQBF9oS5qQuuYjBq+wwsCfYNA==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/commitlint-config@7.6.1':
-    resolution: {integrity: sha512-Tn9zBJEGqdXqcfibAV/xwpIRxMCOWTrZj/+65GAhI/TBd7eiS816RaHLqJcR44C0nHm5ZeLl7s9S54fb6MXHlg==}
+  '@theholocron/commitlint-config@7.7.0':
+    resolution: {integrity: sha512-vMRewxmYGCQek+iEUVgPlFzVJ9KEkK0aQxam/UqV2yQFxVgDXM/UjE9DhiibC5tfyGjHycfrpTcl+IxpWt1RFQ==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@commitlint/cli': ^21
@@ -1353,8 +1515,8 @@ packages:
       '@astrojs/starlight': '>=0.30.0'
       astro: '>=5.0.0'
 
-  '@theholocron/eslint-config@7.6.1':
-    resolution: {integrity: sha512-QHpJPNLjfwI+fo6LjQyeBytBTWDzu/FwY0fisS3GnQwqKwzTTRHHEceWhNCHPaHDfp4a2KC5s13iKDbIq/A5tg==}
+  '@theholocron/eslint-config@7.7.0':
+    resolution: {integrity: sha512-kEFb8TsMd/NDxh8WWrWxHbXk5uGu+/XSb6mddAhX9ToVnaPp8KuTMYmcZweJS4zjb8fVNYBIM06k4j3ZP6EP1Q==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@eslint/js': ^10
@@ -1382,28 +1544,28 @@ packages:
       eslint-plugin-storybook:
         optional: true
 
-  '@theholocron/github-client@1.3.5':
-    resolution: {integrity: sha512-trvWxa7qvBxOzJ4shah0ZnIa7qC4v/e/PZrg2XThuMLZXVQskk9N2FuH8N404QLAcftAY6qPoJDcHf1qhlqEhQ==}
+  '@theholocron/github-client@1.6.1':
+    resolution: {integrity: sha512-9FoDbk3IsMbWq6kveO7gCA4xRskoBylbRQqriQL8dvj1TDGxrvkeMcuXLGxitcv4dtt9kPMHn1PPwNF6Ls9XCw==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/holocron-config@7.6.1':
-    resolution: {integrity: sha512-AXpN+KiTaTzvpGuYpwZpHvg3EGFKhrWRmh47veAmkVlZxMbVjH2ltDAwo5/qFj18nlQPI64DJUCPLlde+vM3Eg==}
+  '@theholocron/holocron-config@7.13.1':
+    resolution: {integrity: sha512-zuFZ+4ebvxqzyfltB+ASv6jntqj4dzu7Wr9vso8sCVqQzbneG+cW2NuyRwoHwpYvsZNpI20eZAl5m/mqTbKboQ==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@theholocron/cli': '>=2.0.0-alpha.1'
 
-  '@theholocron/holocron-docs@3.5.0':
-    resolution: {integrity: sha512-wRRpX9LZRg8NdIz7Neme/BqXsaFwcBt/fPNtiTjaPyxmKk/lbaONadt7URfwYzkd9j7nfLAk/mh8bvzFLnlAhw==}
+  '@theholocron/holocron-docs@3.5.2':
+    resolution: {integrity: sha512-30t1n8jygMsoj4me6aTI6Djfditxkr0DM4IOeuRXDZLIwUxoH1n6xD2hpT/dqXVcVa+qZl+JSfu2aRusWe0VJw==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/holocron-plugin-github@3.4.0':
-    resolution: {integrity: sha512-cQwt+Kd2l9l1V6I8e7Eb5mCfOasF3lHc6yYex4EHCz+XMoEMleCCcxfEUYzSDQo1Zdfd0eqcuSbNvUwcpGHO3A==}
+  '@theholocron/holocron-plugin-github@3.5.2':
+    resolution: {integrity: sha512-x5y63wGdQTJqNl4bfo6JYN2pOFk2DtznroF33rMHy3RZPniUbMkKYx819jEY5qSRi88SgBw2B1xZVjxAc27aHA==}
     peerDependencies:
-      '@theholocron/cli': 3.4.0
+      '@theholocron/cli': 3.5.2
       '@theholocron/github-client': ^1.3.5
 
-  '@theholocron/http-client@1.3.5':
-    resolution: {integrity: sha512-ewcEhcRenI5Z1BtgdUj8ZBUPABPwwHIzvh6sl+HA6QByRx1hFQgwDHWQ+Us22EfweU04umCpq3WXlQsoX4Nm+w==}
+  '@theholocron/http-client@1.6.1':
+    resolution: {integrity: sha512-Bs6LrjvHPivjsLI0YumvKSLQqBNrCPT5BgFdX39hqfVXzvQWOUqCM5sYT8XVoSJ26Z7tNpWTfc2LdjS3nxrbUg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       vitest: '>=4.0.0'
@@ -1411,8 +1573,8 @@ packages:
       vitest:
         optional: true
 
-  '@theholocron/lint-staged-config@7.6.1':
-    resolution: {integrity: sha512-GdvuqIDXqANNGUQI0fFzn275xvu8qleSuub7AmQtm0ZbwBdutPD+Da7qY4yZen+w3ra8XzEGTJaJTPdQu1W1aA==}
+  '@theholocron/lint-staged-config@7.7.0':
+    resolution: {integrity: sha512-veu0h2p+5NTorzZDlwG29LOhY0ZxPa6rtuspYQQqUk/nFpgvazKhNPDi5qY7xyv9//a41j31ebwmkIs3w5Y7Fw==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       husky: ^9
@@ -1426,8 +1588,8 @@ packages:
     resolution: {integrity: sha512-cd1OYamPSG7/dWtX6ECekErnCmdhfQOHQk2Fs11O1zDfRA5tza8sKgVJ00GeELGEzcRBV2OeJAWWs+ag5+hAUQ==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/prettier-config@7.6.1':
-    resolution: {integrity: sha512-KBUcFQOQCPJ5txBNcaF0dHWNjeBY36bNAZ9MnjD9g9Z9vQL8cFd7VbuBCc7np93l4XwcQ5iya+58MmArIi9rNg==}
+  '@theholocron/prettier-config@7.7.0':
+    resolution: {integrity: sha512-WokkXBfSMHPk9lj2I22qkp+de3s/WaROpYbOQ0zf14VDh+6N3KUcabYXhtnewlypfjuKl7eY0OIGV5M+XNRVvg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       prettier: ^3
@@ -1436,16 +1598,16 @@ packages:
     resolution: {integrity: sha512-YUSZsLaW1rl1PxCwjJWgUThtd2lOQrv1xxx2QtrvM0qKZ9sLmKBkmNjKsnecMXn5JbEeyjixLhlKwt6Nw/IfGg==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/skills@1.2.1':
-    resolution: {integrity: sha512-7UvrR6rDia8arkrO9qzMnNfjDBLv+oBA6Ur4jBiuu2RIZBD1GB34DUsO8MfaWsz7fge0jmQZfz6PCd3w9PgEZg==}
+  '@theholocron/skills@1.3.1':
+    resolution: {integrity: sha512-JCMxxNs7w0qj/K3uJHrrrVwJrbrENG9QVT+X9dgr5pG0kYqn0kdYHe7m1CAId+kmZsX8nv4GquHdwr4hKiQ9ng==}
     engines: {node: '>=22', pnpm: '>=10'}
 
   '@theholocron/themes-docs@1.0.9':
     resolution: {integrity: sha512-m01/o1OOQZ6XFIo+KsexEmn5SnJg9gNsrub1DYkBnBNvgDIoTa6d9cXmabLJqTt/woSKvPkajQkBnyxvLO4PIQ==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/tsconfig@7.6.1':
-    resolution: {integrity: sha512-1Xm8ahQE0mYmLKYUiyr5bJQszruLyFVYKfMyrFQN7KgnqPT1iuZ/A0jKkKZ7pueJd+6Za7I/hprt4Cm9YSRnsA==}
+  '@theholocron/tsconfig@7.7.0':
+    resolution: {integrity: sha512-87va/7IFx8iYHrHMueyhBUVJA0cPTz+zckzD4ebyw7Uv0qNprJ/neRTB9NQ7wfNhUe4fQ28khuwMBMAwcT4KJg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       typescript: ^5
@@ -1800,6 +1962,9 @@ packages:
   character-reference-invalid@2.0.1:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
 
+  chardet@2.2.0:
+    resolution: {integrity: sha512-rddelWYNPRrXq6PtNEN2S3f6t9ILzvqaN5pVgi4kqt9jHQaXIial9PznB5iSPVlQSLNaaH22ItWz3EJtQ10+OA==}
+
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
@@ -1826,6 +1991,10 @@ packages:
   cli-truncate@5.2.0:
     resolution: {integrity: sha512-xRwvIOMGrfOAnM1JYtqQImuaNtDEv9v6oIYAs4LIHwTiKee8uwvIi363igssOC0O5U04i4AlENs79LQLu9tEMw==}
     engines: {node: '>=20'}
+
+  cli-width@4.1.0:
+    resolution: {integrity: sha512-ouuZd4/dm2Sw5Gmqy6bGyNNNe1qt9RpmxveLSO7KcgsTnU7RXfsw+/bukWGo1abgBiMAic068rclZsO4IWmmxQ==}
+    engines: {node: '>= 12'}
 
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
@@ -2487,6 +2656,10 @@ packages:
       typescript:
         optional: true
 
+  iconv-lite@0.7.3:
+    resolution: {integrity: sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==}
+    engines: {node: '>=0.10.0'}
+
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
@@ -2499,8 +2672,8 @@ packages:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
 
-  import-in-the-middle@3.3.2:
-    resolution: {integrity: sha512-jTd2FfOgOWOdgjkHuk/1Ms8VKFXkPs15ymYBETw1sAOrO/dY3XeGVRWir9qBbw7pXr0T2eTFwfCZ+N02HmiNGA==}
+  import-in-the-middle@3.3.3:
+    resolution: {integrity: sha512-AiohS3H80sXO6owEltjGX+glb7qXaDhBoJb9XcQVH4UI207xu/bDLUcadVKp7Qe576reg9yr/PXZjV5qx8gfbA==}
     engines: {node: '>=18'}
 
   import-meta-resolve@4.2.0:
@@ -3118,6 +3291,10 @@ packages:
   muggle-string@0.4.1:
     resolution: {integrity: sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==}
 
+  mute-stream@3.0.0:
+    resolution: {integrity: sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw==}
+    engines: {node: ^20.17.0 || >=22.9.0}
+
   nanoid@3.3.16:
     resolution: {integrity: sha512-bzlKTyNJ7+LdGIIwy8ijFpIqEQIvafahV7eYykJ8Cvh42EdJeODoJ6gUJXpQJvej1BddH8OqTXZNE/KfbWAu8Q==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -3502,6 +3679,9 @@ packages:
     resolution: {integrity: sha512-x/+Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl/ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv0ljslUlaw==}
     engines: {node: '>= 0.4'}
 
+  safer-buffer@2.1.2:
+    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+
   satteri@0.9.5:
     resolution: {integrity: sha512-ZuWVl+vnM64y+/TtX8Kosv2c00W+hLQiiwnEL6H0UKVVrxFqMw4D2CJHHQaouVd89OAhtBBfjWLqhKi3TVUV4w==}
 
@@ -3556,6 +3736,10 @@ packages:
 
   shiki@4.3.1:
     resolution: {integrity: sha512-oR+qDVi2OjX1tmDpyv+3KviX01KzO6Af+0NNnKnsp9491UEGz2YpxTuJboS/6VhYpTdqzmuJBuiTlrAWWJAssw==}
+    engines: {node: '>=20'}
+
+  shiki@4.4.1:
+    resolution: {integrity: sha512-rFP+iYKzjLEIqiMiKANhARqiAbk4deDhWnBtnUO/K0D0dPxMGDH4N0FVfBY/VeI+lPrV4wNGCHQZp7EOr7NNBw==}
     engines: {node: '>=20'}
 
   side-channel-list@1.0.1:
@@ -4229,7 +4413,7 @@ snapshots:
 
   '@astrojs/compiler-binding-wasm32-wasi@0.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
+      '@napi-rs/wasm-runtime': 1.2.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -4363,7 +4547,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.4.3
 
-  '@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)':
+  '@astrojs/starlight@0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)':
     dependencies:
       '@astrojs/markdown-satteri': 0.3.5
       '@astrojs/mdx': 7.0.5(@astrojs/markdown-satteri@0.3.5)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
@@ -4453,7 +4637,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.2.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@bruits/satteri-win32-arm64-msvc@0.9.5':
@@ -4763,7 +4947,7 @@ snapshots:
   '@expressive-code/plugin-shiki@0.44.1':
     dependencies:
       '@expressive-code/core': 0.44.1
-      shiki: 4.3.1
+      shiki: 4.4.1
 
   '@expressive-code/plugin-text-markers@0.44.1':
     dependencies:
@@ -4891,6 +5075,125 @@ snapshots:
   '@img/sharp-win32-x64@0.35.3':
     optional: true
 
+  '@inquirer/ansi@2.0.7': {}
+
+  '@inquirer/checkbox@5.2.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/figures': 2.0.7
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/confirm@6.1.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/core@11.2.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/figures': 2.0.7
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+      cli-width: 4.1.0
+      fast-wrap-ansi: 0.2.2
+      mute-stream: 3.0.0
+      signal-exit: 4.1.0
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/editor@5.2.2(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/external-editor': 3.0.3(@types/node@26.1.2)
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/expand@5.1.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/external-editor@3.0.3(@types/node@26.1.2)':
+    dependencies:
+      chardet: 2.2.0
+      iconv-lite: 0.7.3
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/figures@2.0.7': {}
+
+  '@inquirer/input@5.1.2(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/number@4.1.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/password@5.1.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/prompts@8.5.2(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/checkbox': 5.2.1(@types/node@26.1.2)
+      '@inquirer/confirm': 6.1.1(@types/node@26.1.2)
+      '@inquirer/editor': 5.2.2(@types/node@26.1.2)
+      '@inquirer/expand': 5.1.1(@types/node@26.1.2)
+      '@inquirer/input': 5.1.2(@types/node@26.1.2)
+      '@inquirer/number': 4.1.1(@types/node@26.1.2)
+      '@inquirer/password': 5.1.1(@types/node@26.1.2)
+      '@inquirer/rawlist': 5.3.1(@types/node@26.1.2)
+      '@inquirer/search': 4.2.1(@types/node@26.1.2)
+      '@inquirer/select': 5.2.1(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/rawlist@5.3.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/search@4.2.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/figures': 2.0.7
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/select@5.2.1(@types/node@26.1.2)':
+    dependencies:
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/core': 11.2.1(@types/node@26.1.2)
+      '@inquirer/figures': 2.0.7
+      '@inquirer/type': 4.0.7(@types/node@26.1.2)
+    optionalDependencies:
+      '@types/node': 26.1.2
+
+  '@inquirer/type@4.0.7(@types/node@26.1.2)':
+    optionalDependencies:
+      '@types/node': 26.1.2
+
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@mdx-js/mdx@3.1.1':
@@ -4974,14 +5277,14 @@ snapshots:
       '@napi-rs/keyring-win32-ia32-msvc': 1.3.0
       '@napi-rs/keyring-win32-x64-msvc': 1.3.0
 
-  '@napi-rs/wasm-runtime@1.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
+  '@napi-rs/wasm-runtime@1.2.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
       '@tybys/wasm-util': 0.10.3
     optional: true
 
-  '@napi-rs/wasm-runtime@1.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
+  '@napi-rs/wasm-runtime@1.2.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.3
@@ -5003,7 +5306,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/api-logs': 0.220.0
-      import-in-the-middle: 3.3.2
+      import-in-the-middle: 3.3.3
       require-in-the-middle: 8.0.1
     transitivePeerDependencies:
       - supports-color
@@ -5098,7 +5401,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.2.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.2.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@rolldown/binding-win32-arm64-msvc@1.1.5':
@@ -5203,7 +5506,7 @@ snapshots:
       '@sentry/conventions': 0.16.0
       '@sentry/core': 10.69.0
       '@sentry/opentelemetry': 10.69.0(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.10.0(@opentelemetry/api@1.9.1))
-      import-in-the-middle: 3.3.2
+      import-in-the-middle: 3.3.3
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.10.0(@opentelemetry/api@1.9.1)
@@ -5220,7 +5523,7 @@ snapshots:
       '@sentry/node-core': 10.69.0(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/instrumentation@0.220.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.10.0(@opentelemetry/api@1.9.1))
       '@sentry/opentelemetry': 10.69.0(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.10.0(@opentelemetry/api@1.9.1))
       '@sentry/server-utils': 10.69.0
-      import-in-the-middle: 3.3.2
+      import-in-the-middle: 3.3.3
     transitivePeerDependencies:
       - '@opentelemetry/core'
       - '@opentelemetry/exporter-trace-otlp-http'
@@ -5252,9 +5555,23 @@ snapshots:
       '@types/hast': 3.0.5
       hast-util-to-html: 9.0.5
 
+  '@shikijs/core@4.4.1':
+    dependencies:
+      '@shikijs/primitive': 4.4.1
+      '@shikijs/types': 4.4.1
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+      hast-util-to-html: 9.0.5
+
   '@shikijs/engine-javascript@4.3.1':
     dependencies:
       '@shikijs/types': 4.3.1
+      '@shikijs/vscode-textmate': 10.0.2
+      oniguruma-to-es: 4.3.6
+
+  '@shikijs/engine-javascript@4.4.1':
+    dependencies:
+      '@shikijs/types': 4.4.1
       '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.6
 
@@ -5263,9 +5580,18 @@ snapshots:
       '@shikijs/types': 4.3.1
       '@shikijs/vscode-textmate': 10.0.2
 
+  '@shikijs/engine-oniguruma@4.4.1':
+    dependencies:
+      '@shikijs/types': 4.4.1
+      '@shikijs/vscode-textmate': 10.0.2
+
   '@shikijs/langs@4.3.1':
     dependencies:
       '@shikijs/types': 4.3.1
+
+  '@shikijs/langs@4.4.1':
+    dependencies:
+      '@shikijs/types': 4.4.1
 
   '@shikijs/primitive@4.3.1':
     dependencies:
@@ -5273,23 +5599,39 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
+  '@shikijs/primitive@4.4.1':
+    dependencies:
+      '@shikijs/types': 4.4.1
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
   '@shikijs/themes@4.3.1':
     dependencies:
       '@shikijs/types': 4.3.1
+
+  '@shikijs/themes@4.4.1':
+    dependencies:
+      '@shikijs/types': 4.4.1
 
   '@shikijs/types@4.3.1':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
+  '@shikijs/types@4.4.1':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))':
+  '@theholocron/cli@3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2)':
     dependencies:
+      '@inquirer/prompts': 8.5.2(@types/node@26.1.2)
       '@napi-rs/keyring': 1.3.0
       '@sentry/node': 10.69.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
-      '@theholocron/github-client': 1.3.5
-      '@theholocron/http-client': 1.3.5
+      '@theholocron/github-client': 1.6.1
+      '@theholocron/http-client': 1.6.1
       chalk: 6.0.0
       ora: 9.4.1
       tsx: 4.23.1
@@ -5297,31 +5639,32 @@ snapshots:
     transitivePeerDependencies:
       - '@opentelemetry/core'
       - '@opentelemetry/exporter-trace-otlp-http'
+      - '@types/node'
       - supports-color
       - vitest
 
-  '@theholocron/clients-docs@1.5.3': {}
+  '@theholocron/clients-docs@1.5.5': {}
 
-  '@theholocron/commitlint-config@7.6.1(@commitlint/cli@19.8.1(@types/node@26.1.2)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)':
+  '@theholocron/commitlint-config@7.7.0(@commitlint/cli@19.8.1(@types/node@26.1.2)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)':
     dependencies:
       '@commitlint/cli': 19.8.1(@types/node@26.1.2)(typescript@5.9.3)
       '@commitlint/config-conventional': 19.8.1
 
   '@theholocron/configs-docs@7.7.0': {}
 
-  '@theholocron/docs-theme@1.2.2(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))':
+  '@theholocron/docs-theme@1.2.2(@astrojs/starlight@0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))':
     dependencies:
-      '@astrojs/starlight': 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
+      '@astrojs/starlight': 0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
       astro: 7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0)
       gray-matter: 4.0.3
 
-  '@theholocron/docs-theme@1.3.1(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))':
+  '@theholocron/docs-theme@1.3.1(@astrojs/starlight@0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))':
     dependencies:
-      '@astrojs/starlight': 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
+      '@astrojs/starlight': 0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
       astro: 7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0)
       gray-matter: 4.0.3
 
-  '@theholocron/eslint-config@7.6.1(@eslint/js@9.39.5)(eslint-plugin-react@7.37.5(eslint@10.8.0(jiti@2.6.1)))(eslint-plugin-simple-import-sort@14.0.0(eslint@10.8.0(jiti@2.6.1)))(eslint@10.8.0(jiti@2.6.1))(globals@17.8.0)(typescript-eslint@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@5.9.3))':
+  '@theholocron/eslint-config@7.7.0(@eslint/js@9.39.5)(eslint-plugin-react@7.37.5(eslint@10.8.0(jiti@2.6.1)))(eslint-plugin-simple-import-sort@14.0.0(eslint@10.8.0(jiti@2.6.1)))(eslint@10.8.0(jiti@2.6.1))(globals@17.8.0)(typescript-eslint@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@5.9.3))':
     dependencies:
       '@eslint/js': 9.39.5
       eslint: 10.8.0(jiti@2.6.1)
@@ -5331,27 +5674,27 @@ snapshots:
     optionalDependencies:
       eslint-plugin-react: 7.37.5(eslint@10.8.0(jiti@2.6.1))
 
-  '@theholocron/github-client@1.3.5':
+  '@theholocron/github-client@1.6.1':
     dependencies:
-      '@theholocron/http-client': 1.3.5
+      '@theholocron/http-client': 1.6.1
     transitivePeerDependencies:
       - vitest
 
-  '@theholocron/holocron-config@7.6.1(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))':
+  '@theholocron/holocron-config@7.13.1(@theholocron/cli@3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2))':
     dependencies:
-      '@theholocron/cli': 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
+      '@theholocron/cli': 3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2)
 
-  '@theholocron/holocron-docs@3.5.0': {}
+  '@theholocron/holocron-docs@3.5.2': {}
 
-  '@theholocron/holocron-plugin-github@3.4.0(@theholocron/cli@3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.3.5)':
+  '@theholocron/holocron-plugin-github@3.5.2(@theholocron/cli@3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2))(@theholocron/github-client@1.6.1)':
     dependencies:
-      '@theholocron/cli': 3.4.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))
-      '@theholocron/github-client': 1.3.5
+      '@theholocron/cli': 3.8.3(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.1.2)
+      '@theholocron/github-client': 1.6.1
       libsodium-wrappers: 0.8.4
 
-  '@theholocron/http-client@1.3.5': {}
+  '@theholocron/http-client@1.6.1': {}
 
-  '@theholocron/lint-staged-config@7.6.1(husky@9.1.7)(lint-staged@16.4.0)(sort-package-json@4.0.0)':
+  '@theholocron/lint-staged-config@7.7.0(husky@9.1.7)(lint-staged@16.4.0)(sort-package-json@4.0.0)':
     dependencies:
       husky: 9.1.7
       lint-staged: 16.4.0
@@ -5360,8 +5703,8 @@ snapshots:
 
   '@theholocron/node-template-site@0.0.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(typescript@5.9.3)(yaml@2.9.0)':
     dependencies:
-      '@astrojs/starlight': 0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
-      '@theholocron/docs-theme': 1.3.1(@astrojs/starlight@0.41.5(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
+      '@astrojs/starlight': 0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3)
+      '@theholocron/docs-theme': 1.3.1(@astrojs/starlight@0.41.6(@astrojs/markdown-remark@7.2.2)(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0))
       astro: 7.1.6(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.1.2)(jiti@2.6.1)(rollup@4.62.3)(tsx@4.23.1)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@astrojs/markdown-remark'
@@ -5401,17 +5744,17 @@ snapshots:
       - uploadthing
       - yaml
 
-  '@theholocron/prettier-config@7.6.1(prettier@3.9.6)':
+  '@theholocron/prettier-config@7.7.0(prettier@3.9.6)':
     dependencies:
       prettier: 3.9.6
 
   '@theholocron/skills-docs@1.3.1': {}
 
-  '@theholocron/skills@1.2.1': {}
+  '@theholocron/skills@1.3.1': {}
 
   '@theholocron/themes-docs@1.0.9': {}
 
-  '@theholocron/tsconfig@7.6.1(typescript@5.9.3)':
+  '@theholocron/tsconfig@7.7.0(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
 
@@ -5925,6 +6268,8 @@ snapshots:
 
   character-reference-invalid@2.0.1: {}
 
+  chardet@2.2.0: {}
+
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.1.2
@@ -5947,6 +6292,8 @@ snapshots:
     dependencies:
       slice-ansi: 8.0.0
       string-width: 8.2.2
+
+  cli-width@4.1.0: {}
 
   cliui@8.0.1:
     dependencies:
@@ -6899,6 +7246,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
+  iconv-lite@0.7.3:
+    dependencies:
+      safer-buffer: 2.1.2
+
   ignore@5.3.2: {}
 
   ignore@7.0.6: {}
@@ -6908,7 +7259,7 @@ snapshots:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
-  import-in-the-middle@3.3.2:
+  import-in-the-middle@3.3.3:
     dependencies:
       cjs-module-lexer: 2.2.0
       es-module-lexer: 2.3.1
@@ -7796,6 +8147,8 @@ snapshots:
 
   muggle-string@0.4.1: {}
 
+  mute-stream@3.0.0: {}
+
   nanoid@3.3.16: {}
 
   natural-compare@1.4.0: {}
@@ -8354,6 +8707,8 @@ snapshots:
       is-regex: 1.2.1
     optional: true
 
+  safer-buffer@2.1.2: {}
+
   satteri@0.9.5:
     dependencies:
       '@types/estree-jsx': 1.0.5
@@ -8457,6 +8812,17 @@ snapshots:
       '@shikijs/langs': 4.3.1
       '@shikijs/themes': 4.3.1
       '@shikijs/types': 4.3.1
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
+  shiki@4.4.1:
+    dependencies:
+      '@shikijs/core': 4.4.1
+      '@shikijs/engine-javascript': 4.4.1
+      '@shikijs/engine-oniguruma': 4.4.1
+      '@shikijs/langs': 4.4.1
+      '@shikijs/themes': 4.4.1
+      '@shikijs/types': 4.4.1
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 

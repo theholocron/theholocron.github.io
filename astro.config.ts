@@ -60,13 +60,6 @@ export default defineConfig({
 							],
 						},
 						{
-							label: "Skills",
-							items: [
-								{ label: "Overview", link: "projects/skills" },
-								{ autogenerate: { directory: "projects/skills" } },
-							],
-						},
-						{
 							label: "Themes",
 							items: [
 								{ label: "Overview", link: "projects/themes" },

@@ -28,7 +28,6 @@
     "@theholocron/docs-theme": "^1.4.5",
     "@theholocron/holocron-docs": "^3.17.0",
     "@theholocron/node-template-site": "0.0.0",
-    "@theholocron/skills-docs": "^1.3.2",
     "@theholocron/themes-docs": "^1.3.2",
     "@theholocron/utils-docs": "^1.2.1",
     "astro": "^7.2.0",

@@ -30,8 +30,8 @@ importers:
         specifier: ^7.15.0
         version: 7.15.0
       '@theholocron/docs-theme':
-        specifier: ^1.3.2
-        version: 1.3.2(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3))(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))
+        specifier: ^1.4.5
+        version: 1.4.5(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3))(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))
       '@theholocron/holocron-docs':
         specifier: ^3.17.0
         version: 3.17.0
@@ -1330,8 +1330,8 @@ packages:
     resolution: {integrity: sha512-w6wtt4xOnZ8KH+TNuy5ODVdnVUW+2B1hozBEn8PyQ4DE757tMUjh0c3W3jKmqerTInCqpjrPiffvRptnc2v1nw==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/docs-theme@1.3.2':
-    resolution: {integrity: sha512-Xq/keNxN8+9H4S7aY3zrFtLPVhppE0b+dj2NEJK7cKsS5A/KXCpJURQEMhPVaFK8PMVRZm8x+Vu5UuZ583jEsw==}
+  '@theholocron/docs-theme@1.4.5':
+    resolution: {integrity: sha512-Qyg9hHjtEmU83melTS5K5F6hcpmVwErdO63rxfSAwd+KIiXUosPk2So91QsbXVHsC6ooS5zTL8zA6KOSGL98qA==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@astrojs/starlight': '>=0.30.0'
@@ -5345,7 +5345,7 @@ snapshots:
 
   '@theholocron/configs-docs@7.15.0': {}
 
-  '@theholocron/docs-theme@1.3.2(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3))(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))':
+  '@theholocron/docs-theme@1.4.5(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3))(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))':
     dependencies:
       '@astrojs/starlight': 0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3)
       astro: 7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0)
@@ -5392,7 +5392,7 @@ snapshots:
   '@theholocron/node-template-site@0.0.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(typescript@5.9.3)(yaml@2.9.0)':
     dependencies:
       '@astrojs/starlight': 0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3)
-      '@theholocron/docs-theme': 1.3.2(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3))(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))
+      '@theholocron/docs-theme': 1.4.5(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))(typescript@5.9.3))(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0))
       astro: 7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.4)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@astrojs/markdown-remark'

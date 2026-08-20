@@ -60,13 +60,6 @@ export default defineConfig({
 							],
 						},
 						{
-							label: "Themes",
-							items: [
-								{ label: "Overview", link: "projects/themes" },
-								{ autogenerate: { directory: "projects/themes" } },
-							],
-						},
-						{
 							label: "Utils",
 							items: [
 								{ label: "Overview", link: "projects/utils" },

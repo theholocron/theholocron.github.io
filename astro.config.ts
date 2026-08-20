@@ -17,58 +17,6 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: "Projects",
-					items: [
-						// Static overview pages
-						"projects/configuration",
-						{
-							label: "Templates",
-							items: [
-								{ label: "Overview", link: "projects/templates" },
-								{
-									label: "Node",
-									items: [
-										{ label: "Overview", link: "projects/templates/node" },
-										{ autogenerate: { directory: "projects/templates/node" } },
-									],
-								},
-							],
-						},
-						// Per-package groups: Overview is explicit because the index
-						// pages carry sidebar: { hidden: true } in their frontmatter
-						// (they hide themselves on their own repo's site). Sub-pages
-						// use autogenerate per directory so new pages appear automatically.
-						{
-							label: "Clients",
-							items: [
-								{ label: "Overview", link: "projects/clients" },
-								{ autogenerate: { directory: "projects/clients" } },
-							],
-						},
-						{
-							label: "Configs",
-							items: [
-								{ label: "Overview", link: "projects/configs" },
-								{ autogenerate: { directory: "projects/configs" } },
-							],
-						},
-						{
-							label: "Holocron",
-							items: [
-								{ label: "Overview", link: "projects/holocron" },
-								{ autogenerate: { directory: "projects/holocron" } },
-							],
-						},
-						{
-							label: "Utils",
-							items: [
-								{ label: "Overview", link: "projects/utils" },
-								{ autogenerate: { directory: "projects/utils" } },
-							],
-						},
-					],
-				},
-				{
 					label: "Contributing",
 					items: [
 						"contributing",

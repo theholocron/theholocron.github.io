@@ -11,26 +11,6 @@ export const collections = {
 				dir: fileURLToPath(new URL("content/docs", import.meta.url)),
 				slug: "",
 			},
-			{
-				package: "@theholocron/clients-docs",
-				slug: "projects/clients",
-			},
-			{
-				package: "@theholocron/configs-docs",
-				slug: "projects/configs",
-			},
-			{
-				package: "@theholocron/holocron-docs",
-				slug: "projects/holocron",
-			},
-			{
-				package: "@theholocron/utils-docs",
-				slug: "projects/utils",
-			},
-			{
-				package: "@theholocron/node-template-site",
-				slug: "projects/templates/node",
-			},
 		]),
 		schema: docsSchema(),
 	}),

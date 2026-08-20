@@ -24,14 +24,6 @@ export const collections = {
 				slug: "projects/holocron",
 			},
 			{
-				package: "@theholocron/skills-docs",
-				slug: "projects/skills",
-			},
-			{
-				package: "@theholocron/themes-docs",
-				slug: "projects/themes",
-			},
-			{
 				package: "@theholocron/utils-docs",
 				slug: "projects/utils",
 			},

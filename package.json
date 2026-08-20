@@ -23,12 +23,7 @@
   "prettier": "@theholocron/prettier-config",
   "dependencies": {
     "@astrojs/starlight": "^0.41.7",
-    "@theholocron/clients-docs": "^1.6.2",
-    "@theholocron/configs-docs": "^7.15.0",
     "@theholocron/docs-theme": "^1.4.5",
-    "@theholocron/holocron-docs": "^3.17.0",
-    "@theholocron/node-template-site": "0.0.0",
-    "@theholocron/utils-docs": "^1.2.1",
     "astro": "^7.2.0",
     "sharp": "^0.35.3"
   },

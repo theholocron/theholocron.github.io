@@ -31,7 +31,7 @@
     "@astrojs/check": "^0.9.10",
     "@theholocron/cli": "catalog:holocron",
     "@theholocron/commitlint-config": "^7.15.0",
-    "@theholocron/eslint-config": "^7.15.0",
+    "@theholocron/eslint-config": "^7.23.2",
     "@theholocron/holocron-config": "catalog:holocron",
     "@theholocron/holocron-plugin-github": "catalog:holocron",
     "@theholocron/lint-staged-config": "^7.15.0",

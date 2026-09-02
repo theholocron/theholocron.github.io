@@ -46,7 +46,7 @@ importers:
         specifier: catalog:holocron
         version: 7.32.0(@theholocron/cli@3.46.0(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.6.1)(tsx@4.23.12)(yaml@2.9.0))(typescript@5.9.3))(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.4.1)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.6.1)(tsx@4.23.12)(yaml@2.9.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       '@theholocron/holocron-plugin-github':
-        specifier: 3.36.0
+        specifier: catalog:holocron
         version: 3.36.0(@theholocron/cli@3.46.0(@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.2.2)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.6.1)(tsx@4.23.12)(yaml@2.9.0))(typescript@5.9.3))(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.4.1)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.6.1)(tsx@4.23.12)(yaml@2.9.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@theholocron/github-client@1.14.0)
       '@theholocron/lint-staged-config':
         specifier: ^7.15.0

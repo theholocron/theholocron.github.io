@@ -1,5 +1,5 @@
 catalogs:
   holocron:
-    "@theholocron/cli": ^3.36.0
-    "@theholocron/holocron-config": ^7.26.0
-    "@theholocron/holocron-plugin-github": ^3.36.0
+    "@theholocron/cli": ^3.50.0
+    "@theholocron/holocron-config": ^7.32.2
+    "@theholocron/holocron-plugin-github": ^3.50.0

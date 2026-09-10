@@ -2,18 +2,19 @@ import type { HolocronConfig } from "@theholocron/cli";
 import { defineConfig } from "@theholocron/cli";
 import { node } from "@theholocron/holocron-config";
 
-const { repo, providers } = node();
+const preset = node();
 export default defineConfig({
+	...preset,
 	description: "The Holocron Archives.",
 	homepage: "https://docs.theholocron.dev/",
 	repo: {
-		...repo,
+		...preset.repo,
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
 		topics: ["astro", "docs", "starlight"],
 	},
-	workflows: ["lint", "review", "stale", "greetings", "typecheck", "audit", "dependencies", "bookkeeping"],
+	tasks: ["lint", "review", "stale", "greetings", "typecheck", "audit", "dependencies", "bookkeeping"],
 	providers: {
-		...providers,
+		...preset.providers,
 		secrets: "github",
 	},
 	agent: "claude",

@@ -1,5 +1,4 @@
 {
-  "Version": "v3.7.0",
   "Verbose": false,
   "Format": "",
   "Debug": false,
@@ -9,6 +8,7 @@
   "Exclude": [
     "(^|.+/)LICENSE$",
     "^public/.*",
+    "\\.md$",
     "\\.mdx$"
   ],
   "AllowedContentTypes": [],

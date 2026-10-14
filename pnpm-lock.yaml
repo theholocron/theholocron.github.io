@@ -40,8 +40,8 @@ importers:
         specifier: catalog:holocron
         version: 4.16.2(@astrojs/starlight@0.41.7(astro@7.2.8(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.6.5)(jiti@2.6.1)(tsx@4.23.12)(yaml@2.9.0))(typescript@5.9.3))(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(astro@7.2.8(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.6.5)(jiti@2.6.1)(tsx@4.23.12)(yaml@2.9.0))(dotenv@16.6.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@theholocron/commitlint-config':
-        specifier: ^7.15.0
-        version: 7.15.0(@commitlint/cli@19.8.1(@types/node@26.6.5)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)
+        specifier: ^8.7.1
+        version: 8.7.1(@commitlint/cli@19.8.1(@types/node@26.6.5)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)
       '@theholocron/eslint-config':
         specifier: ^7.23.2
         version: 7.23.2(@eslint/js@9.39.5)(eslint-plugin-react@7.37.5(eslint@10.8.1(jiti@2.6.1)))(eslint-plugin-simple-import-sort@14.0.0(eslint@10.8.1(jiti@2.6.1)))(eslint@10.8.1(jiti@2.6.1))(globals@17.9.0)(typescript-eslint@8.65.0(eslint@10.8.1(jiti@2.6.1))(typescript@5.9.3))
@@ -1460,8 +1460,8 @@ packages:
     engines: {node: '>=22.0.0'}
     hasBin: true
 
-  '@theholocron/commitlint-config@7.15.0':
-    resolution: {integrity: sha512-QnzVAKeUqT33130MdzHWkYmAVCMl9JMfh807kzywHBuM3PjxZ+3oVlZ7mtc7l9rfu+v0TgWF94wi3OHs+HX9TQ==}
+  '@theholocron/commitlint-config@8.7.1':
+    resolution: {integrity: sha512-KjljykcN2cGlEgD3nTr7cdsAyNSDqrB5XoLMrTpNbwA3K9ytwDPfiiKZ/QxnviIlj0ZlR+yOrvFW7PGu4a0Z9w==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@commitlint/cli': ^21
@@ -5969,7 +5969,7 @@ snapshots:
       - supports-color
       - vitest
 
-  '@theholocron/commitlint-config@7.15.0(@commitlint/cli@19.8.1(@types/node@26.6.5)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)':
+  '@theholocron/commitlint-config@8.7.1(@commitlint/cli@19.8.1(@types/node@26.6.5)(typescript@5.9.3))(@commitlint/config-conventional@19.8.1)':
     dependencies:
       '@commitlint/cli': 19.8.1(@types/node@26.6.5)(typescript@5.9.3)
       '@commitlint/config-conventional': 19.8.1

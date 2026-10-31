@@ -61,8 +61,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2
       '@theholocron/tsconfig':
-        specifier: ^7.15.0
-        version: 7.15.0(typescript@5.9.3)
+        specifier: ^8.7.1
+        version: 8.7.1(typescript@5.9.3)
       eslint:
         specifier: ^10.8.1
         version: 10.8.1(jiti@2.6.1)
@@ -1605,8 +1605,8 @@ packages:
     resolution: {integrity: sha512-jjnezEdoMUraGe4vmffm51KHTefXFNaHr2XNzweQSGjuzpj+F+iaBu741zXpZDtG5VCsyo5gF/sUIhEtUcw5pg==}
     engines: {node: '>=22', pnpm: '>=10'}
 
-  '@theholocron/tsconfig@7.15.0':
-    resolution: {integrity: sha512-kL7j8k447Ag2BpioBaHThgMUPNPFY+6PFt0ecaVjhtCxOOf1MRJxS1rAgAUmk+SElli9hp2/JYrJ2k6lStW6mg==}
+  '@theholocron/tsconfig@8.7.1':
+    resolution: {integrity: sha512-cS1PDxbxK/jnUhqNGIwmlq1tajYDhwZbR5LuSjmMeSCifDch4hBhkAKPN55j3CmzJvjafrQFUjIalae5npEhtw==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       typescript: ^5
@@ -6054,7 +6054,7 @@ snapshots:
 
   '@theholocron/skills@1.3.2': {}
 
-  '@theholocron/tsconfig@7.15.0(typescript@5.9.3)':
+  '@theholocron/tsconfig@8.7.1(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
 
